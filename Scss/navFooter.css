@@ -3,6 +3,11 @@ main {
   height: 100vh;
 }
 
+main #hero {
+  width: 100%;
+  padding: 0.1rem;
+}
+
 main #header {
   background-color: #0F4C75;
   padding: 1rem;
@@ -115,15 +120,8 @@ main #footer article ul, main #footer article a, main #footer article p {
   height: 480px;
   width: 100%;
   border: 5px solid black;
-}
-
-.burger #vid {
-  position: absolute;
-  top: -5px;
-  left: -5;
-  height: 50px;
-  width: 100px;
-  background-color: #393E46;
+  padding: 1rem;
+  margin: 10px auto;
 }
 
 .burger body {
