@@ -7,6 +7,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 //Om biografen
+//Hele siden er indelt i et gridsystem med én kolonne og fem rækker
+//Den første række er ren overskrift
+//Anden række er første sektion og har også sit eget gridsystem
 #aboutmain {
     display: grid;
     grid-template-rows: 515px 607px 407px 508px 980px;
@@ -24,7 +27,9 @@ body {
     line-height: 130%;
     margin-bottom: 25px;
     }
-
+//Gridsystemet i første sektion har to kolonner og syv rækker
+//Den første og sidste række er tom, og de er der primært for at skabe plads
+//Gridsystemet bruges til at indele teksten i afsnit, og placere billedet
 #aboutone {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -79,6 +84,9 @@ body {
     font-size: 18px;
     align-self: center;
 }
+//Tredje sektion har også sit eget gridsystem,
+//men ligesom det overordnede grid, har det kun én kolonne
+//Ligesom gridsystemet i første sektion, er den første og sidste række i dette system også tom
 #aboutthree {
     grid-row-start: 4;
     grid-column-start: 1;
@@ -137,6 +145,7 @@ body {
 #abouttwo p {
     max-width: 65%;
 }
+//Media query
 @media only screen and (max-width: 768px) {
     #aboutmain {
         display: grid;
