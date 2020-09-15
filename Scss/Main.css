@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=Main.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#aboutmain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 515px 607px 407px 508px 980px;
+      grid-template-rows: 515px 607px 407px 508px 980px;
+  -ms-grid-columns: 5% 90% 5%;
+      grid-template-columns: 5% 90% 5%;
+}
+
+#abouthead {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  background-color: #1B262C;
+  color: #BBE1FA;
+  font-size: 100px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#aboutone {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  background-color: #0F4C75;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#abouttwo {
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  background-color: #1B262C;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#aboutthree {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  background-color: #0F4C75;
+  color: #291212;
+  font-size: 18px;
+}
+
+.aboutpara h2 {
+  color: #BBE1FA;
+  font-size: 80px;
+}
+
+.aboutpara p {
+  max-width: 70%;
+}
+
+#aboutfront {
+  max-width: 20%;
+}
+/*# sourceMappingURL=Main.css.map */
