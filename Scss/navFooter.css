@@ -30,6 +30,16 @@ main #footer article {
           justify-content: space-between;
 }
 
+main #footer article span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
 main #footer article ul, main #footer article a, main #footer article p {
   list-style-type: none;
   text-decoration: none;
@@ -37,57 +47,58 @@ main #footer article ul, main #footer article a, main #footer article p {
   font-size: 1rem;
 }
 
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #1B262C;
-  background-color: #1B262C;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+main #footer article img {
+  width: 30%;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {
-    font-size: 20px;
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    height: 100vh;
   }
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+  main #footer {
+    width: 100%;
+    background-color: #393E46;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main #footer article {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #footer article span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+  main #footer article ul, main #footer article a, main #footer article p {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  main #footer article img {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=navFooter.css.map */
