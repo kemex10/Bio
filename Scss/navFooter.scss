@@ -4,7 +4,9 @@ $navbar-color: #0F4C75;
 main {
     width: 100%;
     height: 100vh;
-
+    #hero {
+    width: 100%;
+    }
     #header {
         background-color: $navbar-color;
         padding: 1rem;
@@ -134,15 +136,10 @@ main {
         height: 480px;
         width: 100%;
         border: 5px solid black;
+        padding: 1rem;
+        margin: 10px auto;
       }
-      #vid {
-        position: absolute;
-        top:-5px;
-        left:-5;
-        height: 50px;
-        width: 100px;
-        background-color: $background-color;
-      }
+
       body{
      background-color: $background-color;
       }
