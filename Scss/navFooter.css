@@ -45,7 +45,7 @@ main #footer article ul, main #footer article a, main #footer article p {
   top: 0;
   left: 0;
   background-color: #1B262C;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #1B262C;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
