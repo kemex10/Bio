@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #aboutmain {
   display: -ms-grid;
   display: grid;
@@ -63,20 +68,6 @@
 
 #aboutfront {
   max-width: 20%;
+  display: inline-block;
 }
 /*# sourceMappingURL=Main.css.map */
-/* No CSS *//*# sourceMappingURL=Main.css.map */
-@font-face {
-    font-family: Segoe UI;
-    src: url(Segoe_UI.ttf)
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
