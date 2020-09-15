@@ -91,6 +91,10 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
 }
+#aboutfour {
+    grid-row-start: 5;
+    grid-column-start: 1;
+}
 #senp {
     grid-column-start: 1;
     grid-row-start: 3;
@@ -130,9 +134,81 @@ body {
     font-size: 100px;
     font-weight: normal;
 }
-#aboutthree p {
-line-height: 150%;
-}
 #abouttwo p {
     max-width: 65%;
+}
+@media only screen and (max-width: 768px) {
+    #aboutmain {
+        display: grid;
+        grid-template-rows: 515px 800px 407px 400px 980px;
+    }
+    #aboutfront {
+        width: 60%;
+        height: 40%;
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        align-self: center;
+        justify-self: center;
+        margin: 0;
+    }
+    #aboutone {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 15% 15% 45%;
+    }
+    #pone {
+        grid-row-start: 2;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    #ptwo {
+        grid-row-start: 3;
+        margin-left: 6%;
+        margin-right: 6%;
+
+
+    }
+    #pthree {
+        grid-row-start: 4;
+        margin-left: 6%;
+        margin-right: 6%;
+
+
+    }
+    #aboutone h2 {
+        grid-row-start: 1;
+        margin-left: 6%;
+
+    }
+    .aboutpara h2 {
+        font-size: 60px;
+        font-weight: normal;
+        margin-left: 6%;
+        line-height: 150%;
+    }
+    #aboutthree {
+        display: grid;
+        grid-template-rows: 25% 15% 10% 10% 20% 20%;
+    }
+    #aboutthree h2 {
+        grid-row-start: 1;
+        line-height: 100%;
+        margin-bottom: 20px;
+    }
+    #senp {
+        grid-row-start: 2;
+    }
+    #firp {
+        grid-row-start: 3;
+    }
+    #secp {
+        grid-row-start: 4;
+    }
+    #thip {
+        grid-row-start: 5;
+    }
+    #midp {
+        grid-row-start: 6;
+    }
 }

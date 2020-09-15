@@ -138,6 +138,13 @@ body {
       grid-template-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
 }
 
+#aboutfour {
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
 #senp {
   -ms-grid-column: 1;
       grid-column-start: 1;
@@ -197,11 +204,100 @@ body {
   font-weight: normal;
 }
 
-#aboutthree p {
-  line-height: 150%;
-}
-
 #abouttwo p {
   max-width: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutmain {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 515px 800px 407px 400px 980px;
+        grid-template-rows: 515px 800px 407px 400px 980px;
+  }
+  #aboutfront {
+    width: 60%;
+    height: 40%;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+  }
+  #aboutone {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 10% 15% 15% 45%;
+        grid-template-rows: 10% 10% 15% 15% 45%;
+  }
+  #pone {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #ptwo {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #pthree {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #aboutone h2 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-left: 6%;
+  }
+  .aboutpara h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-left: 6%;
+    line-height: 150%;
+  }
+  #aboutthree {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 25% 15% 10% 10% 20% 20%;
+        grid-template-rows: 25% 15% 10% 10% 20% 20%;
+  }
+  #aboutthree h2 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+  #senp {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  #firp {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  #secp {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  #thip {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+  #midp {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
 }
 /*# sourceMappingURL=Main.css.map */
