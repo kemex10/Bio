@@ -3,23 +3,25 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #aboutmain {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 515px 607px 407px 508px 980px;
       grid-template-rows: 515px 607px 407px 508px 980px;
-  -ms-grid-columns: 5% 90% 5%;
-      grid-template-columns: 5% 90% 5%;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background-color: #1B262C;
 }
 
 #abouthead {
   -ms-grid-row: 1;
       grid-row-start: 1;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  background-color: #1B262C;
-  color: #BBE1FA;
-  font-size: 100px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -27,47 +29,179 @@
       align-self: center;
 }
 
+.aboutpara p {
+  margin-left: 6%;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+
 #aboutone {
   -ms-grid-row: 2;
       grid-row-start: 2;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   background-color: #0F4C75;
   color: #ffffff;
   font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  -ms-grid-rows: 15% 20% 10% 15% 15% 15% 10%;
+      grid-template-rows: 15% 20% 10% 15% 15% 15% 10%;
+}
+
+#aboutone h2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  margin-left: 10%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#pone {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 10%;
+}
+
+#ptwo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 10%;
+}
+
+#pthree {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 10%;
+}
+
+#aboutfront {
+  margin-right: 15%;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 8;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 420px;
+  height: 416px;
 }
 
 #abouttwo {
   -ms-grid-row: 3;
       grid-row-start: 3;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  background-color: #1B262C;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   color: #ffffff;
   font-size: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #aboutthree {
   -ms-grid-row: 4;
       grid-row-start: 4;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   background-color: #0F4C75;
-  color: #291212;
+  color: #ffffff;
   font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
+      grid-template-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
+}
+
+#senp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+#firp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+#secp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+}
+
+#thip {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+}
+
+#midp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
 }
 
 .aboutpara h2 {
   color: #BBE1FA;
   font-size: 80px;
+  font-weight: normal;
+  margin-left: 6%;
+  line-height: 150%;
 }
 
-.aboutpara p {
-  max-width: 70%;
+#aboutthree h2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
-#aboutfront {
-  max-width: 20%;
-  display: inline-block;
+#abouthead h1 {
+  color: #BBE1FA;
+  font-size: 100px;
+  font-weight: normal;
+}
+
+#aboutthree p {
+  line-height: 150%;
+}
+
+#abouttwo p {
+  max-width: 65%;
 }
 /*# sourceMappingURL=Main.css.map */
