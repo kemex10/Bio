@@ -1,1 +1,15 @@
+<<<<<<< HEAD
 /* No CSS *//*# sourceMappingURL=Main.css.map */
+=======
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*# sourceMappingURL=Main.css.map */
+>>>>>>> 3ad9c9798d7dd91237b2854917c075d07dd9ab7f

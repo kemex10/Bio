@@ -1,0 +1,185 @@
+$background-color: #1B262C;
+$form-color: #0F4C75;
+$information-color: #D6D6D6;
+$custom-color: #BBE1FA;
+$text-color: #707070;
+
+@media (min-width: 768px) {
+    #tilmeld {
+        width: 100%;
+        height: 100vh;
+        background-color: $background-color;
+        article {
+            width: 70%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: grid;
+            grid-template-columns: 70% 30%;
+    
+            #form {
+                display: flex;
+                flex-direction: column;
+                h2 { 
+                    color: $custom-color;
+                    font-weight: normal;
+                    font-size: 3rem;
+                 }
+                background-color: $form-color;
+                padding: 2rem;
+                span { 
+                    color: white;
+                    margin: 2rem 0 1rem 0;
+                    font-size: 2rem;
+                 }
+                #email, #name, #alder {
+                    width: 50%;
+                    padding: .5rem 2rem;
+                    border: none;
+                    background-color: $information-color;
+                    margin-bottom: 1rem;
+                    outline: none;
+                }
+                ::placeholder {
+                    font-weight: bold;
+                }
+                div {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                }
+                button {
+                    width: 50%;
+                    padding: .5rem 2rem;
+                    background-color: $custom-color;
+                    border: none;
+                    outline: none;
+                    color: $text-color;
+                    font-weight: bold;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    label[for="checkbox"] {
+                        color: white;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            
+            #information {
+                background-color: $information-color;
+                padding: 2rem;
+                color: $text-color;
+                h2 {
+                    font-weight: normal;
+                    font-size: 3rem;
+                }
+                .prices {
+                    p {
+                        margin-bottom: .25rem;
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        strong {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    #tilmeld {
+        width: 100%;
+        height: auto;
+        background-color: $background-color;
+        padding: 2rem;
+        article {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-rows: auto auto;
+    
+            #form {
+                display: flex;
+                flex-direction: column;
+                h2 { 
+                    color: $custom-color;
+                    font-weight: normal;
+                    font-size: 3rem;
+                 }
+                background-color: $form-color;
+                padding: 2rem;
+                span { 
+                    color: white;
+                    margin: 2rem 0 1rem 0;
+                    font-size: 2rem;
+                 }
+                #email, #name, #alder {
+                    width: 100%;
+                    padding: .5rem 2rem;
+                    border: none;
+                    background-color: $information-color;
+                    margin-bottom: 1rem;
+                    outline: none;
+                }
+                ::placeholder {
+                    font-weight: bold;
+                }
+                div {
+                    display: grid;
+                    grid-template-columns: auto 1fr;
+                }
+                button {
+                    width: 100%;
+                    padding: .5rem 2rem;
+                    background-color: $custom-color;
+                    border: none;
+                    outline: none;
+                    color: $text-color;
+                    font-weight: bold;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 3rem;
+                    label[for="checkbox"] {
+                        color: white;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            
+            #information {
+                background-color: $information-color;
+                padding: 2rem;
+                color: $text-color;
+                h2 {
+                    font-weight: normal;
+                    font-size: 3rem;
+                }
+                .prices {
+                    p {
+                        margin-bottom: .25rem;
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        strong {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-end;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
