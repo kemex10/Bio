@@ -10,19 +10,30 @@
 
 <body>
     <main>
-        <section id="header"></section>        
+        <section id="header"> 
+        <img class="logo" src="Gfx/logo.png" alt="Logo" style="    position: relative;
+        top: 10px;
+        left: 100px; width:5%;">
+         
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
               <a href="#">About</a>
               <a href="#">Services</a>
               <a href="#">Clients</a>
-              <a href="#">Contact</a>
+              <a href="#">Contact</a>  
+              </div>
             </div>
-          </div>
-          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+        <span class="burger" onclick="openNav()">&#9776; </span>
+        </div>
+    </section> 
         <section id="hero"></section>
-
+        <div class="vid-border">
+            <video id="vid" loop autoplay autobuffer controls muted style="width: 100%; height: 60vh; background-color:#393E46 ;">
+                <source type="video/mp4" src="Gfx\Media\Citizenfour.mp4">
+                </source>
+            </video>
+        </div>
           
           
           
