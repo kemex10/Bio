@@ -1,4 +1,8 @@
 /* No CSS *//*# sourceMappingURL=Main.css.map */
+@font-face {
+    font-family: Segoe UI;
+    src: url(Segoe_UI.ttf)
+}
 
 * {
     padding: 0;
@@ -7,5 +11,5 @@
 }
 
 body {
-    font-family: s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
