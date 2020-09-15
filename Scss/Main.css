@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 #aboutmain {
   display: -ms-grid;
   display: grid;
@@ -70,3 +65,14 @@
   max-width: 20%;
 }
 /*# sourceMappingURL=Main.css.map */
+/* No CSS *//*# sourceMappingURL=Main.css.map */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: s;
+}
