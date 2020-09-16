@@ -143,6 +143,28 @@ body {
       grid-row-start: 5;
   -ms-grid-column: 1;
       grid-column-start: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+#modal {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#modal img {
+  width: 100%;
+}
+
+.slideOverlay {
+  font-size: 60px;
+  font-weight: light;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #senp {
