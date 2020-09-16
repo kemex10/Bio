@@ -4,27 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Scss/Bestil.css">
+    <link rel="stylesheet" href="Scss/Bestil.css">
+    <link rel="stylesheet" href="Scss/navFooter.css">
     <title>Document</title>
 </head>
 
 <body>
-    <section id="header"> 
-        <img class="logo" src="Gfx/logo.png" alt="Logo" style="    position: relative;
+    <main>
+        <section id="header"> 
+        <img class="logo"src="Gfx/logo.png" alt="Logo" style="position: relative;
         top: 10px;
         left: 100px; width:5%;">
          
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>  
+              <a href="Index.html">Hjem</a>
+              <a href="ombio.html">Om Biografen</a>
+              <a href="aktuelt.html">Alle Kørende Film</a>
+              <a href="tilmelding.html">Tilmelding</a>
+              <a href="bestil.html">Billet Bestiling</a>
+              <a href="kontakt.html">Kontakt</a>   
               </div>
             </div>
         <span class="burger" onclick="openNav()">&#9776; </span>
         </div>
+    </section> 
+
+        <section id="bestil">
+            <article class="Bestil">
+                <h1>Bestil Billetter</h1>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Film</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a href="#">Citizenfour</a>
+                      <a href="#">Ida</a>
+                      <a href="#">The Riot Club</a>
+                      <a href="#">Trash</a>
+                    </div>
+                  </div>
+              </article>
+            </li>
+            <h3>Vælg tid:</h3>
+            <input type="datetime-local" style="margin-top: 10px; width: 300px;" id="meeting-time"
+                   name="meeting-time" value="2020-09-16T11:00"
+                   min="2020-09-16T00:00" max="2022-12-31T00:30"/>
+<br>
+                    <h3>Antal Billetter:</h3>
+                   <input type="text" name="antal billetter" id="antal" style="margin-top: 10px; width: 300px;"/>
+                   
+                   <h3>Specielle Forhold</h3>
+                   <input type="text" name="" id="" style="margin-top: 5px; width: 300px; margin-right: 500px;"/> 
+                   
+                   <input type="checkbox">2D <input type="checkbox">3D
+
+                  
+                   <button class="button" type="submit">Send</button>
+          </section>
+          
+         
+
+        <section id="footer">
+            <article>
+                <span>
+                    <image src="Gfx/logo.png" alt="logo" />
+                    <ul>
+                        <li><a href="#">Telefon: 55 33 23 16</a></li>
+                        <li><a href="#">E-mail: Biografen@mail.dk</a></li>
+                    </ul>
+                </span>
+                <span>
+                    <p>
+                        Biografen<br />
+                        Haveje 33-35<br />
+                        1840 Avedøre
+                    </p>
+                </span>
+                <span>
+                    <ul>
+                        <li><a href="#">www.biografen1.dk</a></li>
+                        <li><a href="#">Copyright 2020-2020</a></li>
+                        <li><a href="#">Biografen 1</a></li>
+                    </ul>
+                </span>
+            </article>
+        </section>
+    </main>
+        <script src="js/App.js"></script>
 </body>
 
 </html>
