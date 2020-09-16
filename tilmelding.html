@@ -11,10 +11,31 @@
 </head>
 
 <body>
+    <!--Main container for sections-->
     <main>
-        <section id="header"></section>
+
+        <section id="header">
+            <img class="logo" src="Gfx/logo.png" alt="Logo" style="    position: relative;
+            top: 10px;
+            left: 100px; width:5%;">
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <span class="burger" onclick="openNav()">&#9776; </span>
+            </div>
+        </section>
+        <!--Tilmeld section-->
         <section id="tilmeld">
+            <!--Article container-->
             <article>
+                <!--Form-->
                 <form id="form">
                     <h2>SENIOR BIO</h2>
                     <span>TILMELDING</span>
@@ -28,6 +49,7 @@
 
                     <button type="submit" id="submit">TILMELD</button>
                 </form>
+                <!--Footer, for information (FORDELE)-->
                 <footer id="information">
                     <h2>FORDELE</h2><br />
                     <p>Senior Bio!<br />
@@ -41,6 +63,7 @@
                         omgivelser
                         med mennesker du holder af eller nye bekendtskaber.
                     </p><br />
+                    <!--Sperate prices-->
                     <span class="prices">
                         <p>MEDLEMSKAB OG PRISER:</p>
                         <p>Senior Bio:</p>
@@ -77,6 +100,8 @@
             </article>
         </section>
     </main>
+
+    <script src="./JS/App.js"></script>
 </body>
 
 </html>
