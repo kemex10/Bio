@@ -9,6 +9,7 @@ body main {
 
 body main #hero {
   width: 100%;
+  padding: 0.1rem;
 }
 
 body main #header {
@@ -49,8 +50,7 @@ body main #footer article {
           justify-content: space-between;
 }
 
-<<<<<<< HEAD
-main #footer article span {
+body main #footer article span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,27 +60,23 @@ main #footer article span {
           flex-direction: column-reverse;
 }
 
-main #footer article ul, main #footer article a, main #footer article p {
-=======
 body main #footer article ul, body main #footer article a, body main #footer article p {
->>>>>>> Andreas
   list-style-type: none;
   text-decoration: none;
   color: white;
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
-main #footer article img {
+body main #footer article img {
   width: 30%;
 }
 
 @media (max-width: 768px) {
-  main {
+  body main {
     width: 100%;
     height: 100vh;
   }
-  main #footer {
+  body main #footer {
     width: 100%;
     background-color: #393E46;
     padding: 1rem;
@@ -91,7 +87,7 @@ main #footer article img {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  main #footer article {
+  body main #footer article {
     width: 90%;
     margin: 0 auto;
     display: -webkit-box;
@@ -105,7 +101,7 @@ main #footer article img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main #footer article span {
+  body main #footer article span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -115,21 +111,18 @@ main #footer article img {
             flex-direction: column-reverse;
     margin-bottom: 2rem;
   }
-  main #footer article ul, main #footer article a, main #footer article p {
+  body main #footer article ul, body main #footer article a, body main #footer article p {
     list-style-type: none;
     text-decoration: none;
     color: white;
     font-size: 1rem;
   }
-  main #footer article img {
+  body main #footer article img {
     width: 30%;
   }
 }
 
-.overlay {
-=======
 body .overlay {
->>>>>>> Andreas
   height: 100%;
   width: 0;
   position: fixed;
@@ -151,14 +144,10 @@ body .overlay-content {
   margin-top: 30px;
 }
 
-<<<<<<< HEAD
-.overlay a {
+body .overlay a {
   width: 20%;
   margin: 1rem auto;
   line-height: 100%;
-=======
-body .overlay a {
->>>>>>> Andreas
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -168,24 +157,20 @@ body .overlay a {
   transition: 0.3s;
 }
 
-<<<<<<< HEAD
-.film .showFilm {
+body .film .showFilm {
   overflow: hidden;
   display: none;
 }
 
-.film .showFilm a {
+body .film .showFilm a {
   font-size: 1rem;
 }
 
-.film:hover > .showFilm {
+body .film:hover > .showFilm {
   display: block;
 }
 
-.overlay-content a:hover {
-=======
-body .overlay a:hover, body .overlay a:focus {
->>>>>>> Andreas
+body .overlay-content a:hover {
   color: #f1f1f1;
   border-bottom: 2px solid white;
 }
