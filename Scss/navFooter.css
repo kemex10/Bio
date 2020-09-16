@@ -5,7 +5,6 @@ main {
 
 main #hero {
   width: 100%;
-  padding: 0.1rem;
 }
 
 main #header {
@@ -140,6 +139,9 @@ main #footer article img {
 }
 
 .overlay a {
+  width: 20%;
+  margin: 1rem auto;
+  line-height: 100%;
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -149,8 +151,22 @@ main #footer article img {
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.film .showFilm {
+  overflow: hidden;
+  display: none;
+}
+
+.film .showFilm a {
+  font-size: 1rem;
+}
+
+.film:hover > .showFilm {
+  display: block;
+}
+
+.overlay-content a:hover {
   color: #f1f1f1;
+  border-bottom: 2px solid white;
 }
 
 .overlay .closebtn {
