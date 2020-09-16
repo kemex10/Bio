@@ -96,6 +96,9 @@ main {
   }
   
   .overlay a {
+      width: 20%;
+      margin: 1rem auto;
+      line-height: 100%;
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
@@ -103,11 +106,24 @@ main {
     display: block;
     transition: 0.3s;
   }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+
+  .film .showFilm {
+      overflow: hidden;
+      display: none;
+      a {
+          font-size: 1rem;
+      }
+  }
+
+  .film:hover > .showFilm {
+      display: block;
   }
   
+  .overlay-content a:hover {
+    color: #f1f1f1;
+    border-bottom: 2px solid white;
+  }
+
   .overlay .closebtn {
     position: absolute;
     top: 20px;

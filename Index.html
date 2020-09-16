@@ -10,23 +10,33 @@
 
 <body>
     <main>
-        <section id="header"> 
-        <img class="logo" src="Gfx/logo.png" alt="Logo" style="    position: relative;
+        <section id="header">
+            <img class="logo" src="Gfx/logo.png" alt="Logo" style="    position: relative;
         top: 10px;
         left: 100px; width:5%;">
-         
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>  
-              </div>
+
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <ul>
+                        <li><a href="#">Hjem</a></li>
+                        <li><a href="#">Om Biografen</a></li>
+                        <li class="film"><a href="#">Film</a>
+                            <ul class="showFilm">
+                                <li><a href="#">Aktuelle film</a></li>
+                                <li><a href="#">Børne film</a></li>
+                                <li><a href="#">Senior film</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tilmelding</a></li>
+                        <li><a href="#">Besti</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </div>
             </div>
-        <span class="burger" onclick="openNav()">&#9776; </span>
-        </div>
-    </section> 
+            <span class="burger" onclick="openNav()">&#9776; </span>
+            </div>
+        </section>
         <section id="hero"></section>
         <div class="vid-border">
             <video id="vid" loop autoplay autobuffer controls muted style="width: 100%; background-color:#393E46;">
@@ -34,9 +44,9 @@
                 </source>
             </video>
         </div>
-          
-          
-          
+
+
+
         <section id="footer">
             <article>
                 <span>
