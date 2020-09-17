@@ -12,18 +12,6 @@ body main #hero {
   padding: 0.1rem;
 }
 
-body main #header {
-  background-color: #0F4C75;
-  padding: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  width: 100%;
-}
-
 body main #footer {
   background-color: #393E46;
   padding: 1rem;
@@ -122,98 +110,214 @@ body main #footer article img {
   }
 }
 
-body .overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #1B262C;
-  background-color: #1B262C;
-  overflow-x: hidden;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+body * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-body .overlay-content {
-  position: relative;
-  top: 25%;
+body #header {
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  background-color: aliceblue;
+  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 }
 
-body .overlay a {
-  width: 20%;
-  margin: 1rem auto;
-  line-height: 100%;
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+body #header img {
+  width: 40%;
 }
 
-body .film .showFilm {
-  overflow: hidden;
+body #header article {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #header article footer #animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+body #header article footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  z-index: 3;
+}
+
+body #header article footer #menu {
+  list-style-type: none;
+  position: absolute;
+  top: 10%;
+  right: 10%;
   display: none;
+  -webkit-transform: rotateX(20deg) rotateY(20deg);
+          transform: rotateX(20deg) rotateY(20deg);
+  z-index: 4;
 }
 
-body .film .showFilm a {
-  font-size: 1rem;
-}
-
-body .film:hover > .showFilm {
-  display: block;
-}
-
-body .overlay-content a:hover {
-  color: #f1f1f1;
+body #header article footer #menu > li:hover {
   border-bottom: 2px solid white;
 }
 
-body .overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  body .overlay a {
-    font-size: 20px;
-  }
-  body .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
-body .burger {
-  position: absolute;
-  top: 20px;
-  right: 70px;
-  color: #f1f1f1;
-  font-size: 50px;
-  cursor: pointer;
-  height: 50%;
-  width: -50%;
-}
-
-body .burger .vid-border {
+body #header article footer #menu .newUl {
   position: relative;
-  height: 480px;
-  width: 100%;
-  border: 5px solid black;
-  padding: 1rem;
-  margin: 10px auto;
 }
 
-body .burger body {
-  background-color: #393E46;
+body #header article footer #menu .newUl:hover > ul {
+  opacity: 1;
+  -webkit-transition: opacity .5 ease-in-out;
+  transition: opacity .5 ease-in-out;
+}
+
+body #header article footer #menu .newUl ul {
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(-110%, -50%);
+          transform: translate(-110%, -50%);
+  opacity: 0;
+  -webkit-transition: opacity .5 ease-in-out;
+  transition: opacity .5 ease-in-out;
+}
+
+body #header article footer #menu .newUl ul a {
+  font-size: 2rem;
+}
+
+body #header article footer #menu .newUl ul a:hover {
+  font-size: 3rem;
+}
+
+body #header article footer a {
+  text-decoration: none;
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: white;
+}
+
+body #header article footer a:hover {
+  font-size: 6rem;
+}
+
+body .display {
+  display: none;
+}
+
+body .active {
+  display: block;
+}
+
+body ion-icon {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  body #header {
+    width: 100%;
+    background-color: aliceblue;
+    -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
+  }
+  body #header article {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+  }
+  body #header article footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  body #header article footer #animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300%;
+  }
+  body #header article footer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+  body #header article footer #menu {
+    list-style-type: none;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    display: none;
+    -webkit-transform: rotateX(25deg) rotateY(20deg);
+            transform: rotateX(25deg) rotateY(20deg);
+  }
+  body #header article footer #menu > li:hover {
+    border-bottom: 2px solid white;
+  }
+  body #header article footer #menu .newUl {
+    position: relative;
+  }
+  body #header article footer #menu .newUl:hover > ul {
+    opacity: 1;
+    -webkit-transition: opacity .5 ease-in-out;
+    transition: opacity .5 ease-in-out;
+  }
+  body #header article footer #menu .newUl ul {
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-110%, -50%);
+            transform: translate(-110%, -50%);
+    opacity: 0;
+    -webkit-transition: opacity .5 ease-in-out;
+    transition: opacity .5 ease-in-out;
+  }
+  body #header article footer #menu .newUl ul a {
+    font-size: 1rem;
+  }
+  body #header article footer #menu .newUl ul a:hover {
+    font-size: 2rem;
+  }
+  body #header article footer a {
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 2rem 0;
+    color: white;
+  }
+  body #header article footer a:hover {
+    font-size: 4rem;
+  }
+  body .display {
+    display: none;
+  }
+  body .active {
+    display: block;
+  }
+  body ion-icon {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=navFooter.css.map */
