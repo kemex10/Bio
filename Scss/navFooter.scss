@@ -7,12 +7,6 @@ main {
     #hero {
     width: 100%;
     }
-    #header {
-        background-color: $navbar-color;
-        padding: 1rem;
-        display: flex;
-        align-items: flex-end;
-    }
     #footer {
         background-color: $background-color;
         padding: 1rem;
@@ -73,90 +67,185 @@ main {
     }
 }
 
-//header//
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #1B262C;
-    background-color: #1B262C;
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
     width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-      width: 20%;
-      margin: 1rem auto;
-      line-height: 100%;
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .film .showFilm {
-      overflow: hidden;
-      display: none;
-      a {
-          font-size: 1rem;
-      }
-  }
-
-  .film:hover > .showFilm {
-      display: block;
-  }
-  
-  .overlay-content a:hover {
-    color: #f1f1f1;
-    border-bottom: 2px solid white;
-  }
-
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+    img {
+        width: 40%;
     }
-  }
-  .burger{
-    position: absolute;
-    top: 20px;
-    right: 70px;
-    color: #f1f1f1;
-    font-size: 50px;
-    cursor: pointer;
-
-    .vid-border{
-        position: relative;
-        height: 480px;
-        width: 100%;
-        border: 5px solid black;
+    article {
+        width: 90%;
+        margin: 0 auto;
         padding: 1rem;
-        margin: 10px auto;
-      }
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        footer {
+            #animation {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 2;
+            }
+            span {
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                z-index: 3;
+            }
+            #menu {
+                list-style-type: none;
+                position: absolute;
+                top: 10%;
+                right: 10%;
+                display: none;
+                transform: rotateX(20deg) rotateY(20deg);
+                z-index: 4;
+                & > li:hover{
+                    border-bottom: 2px solid white;
+                }
+                .newUl {
+                    position: relative;
+                    &:hover > ul {
+                        opacity: 1;
+                        transition: opacity .5 ease-in-out;
+                    }
+                }
+                .newUl ul {
+                    list-style-type: none;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(-110%, -50%);
+                    opacity: 0;
+                    transition: opacity .5 ease-in-out;
+                    a {
+                        font-size: 2rem;
+                        &:hover {
+                            font-size: 3rem;
+                        }
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                font-size: 5rem;
+                margin: 2rem 0;
+                color: white;
+                // transform: rotateY(160deg);
+                &:hover {
+                    font-size: 6rem;
+                }
+                
+            }
+        }
+    }
+}
 
-      body{
-     background-color: $background-color;
-      }
-  }
+.display {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+ion-icon {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    #header {
+        width: 100%;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
+        article {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            footer {
+                width: 100%;
+                overflow: hidden;
+                #animation {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 300%;
+                }
+                span {
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+                    z-index: 1;
+                }
+                #menu {
+                    list-style-type: none;
+                    position: absolute;
+                    top: 10%;
+                    right: 10%;
+                    display: none;
+                    transform: rotateX(25deg) rotateY(20deg);
+                    & > li:hover{
+                        border-bottom: 2px solid white;
+                    }
+                    .newUl {
+                        position: relative;
+                        &:hover > ul {
+                            opacity: 1;
+                            transition: opacity .5 ease-in-out;
+                        }
+                    }
+                    .newUl ul {
+                        list-style-type: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(-110%, -50%);
+                        opacity: 0;
+                        transition: opacity .5 ease-in-out;
+                        a {
+                            font-size: 1rem;
+                            &:hover {
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                }
+                a {
+                    text-decoration: none;
+                    font-size: 3rem;
+                    margin: 2rem 0;
+                    color: white;
+                    // transform: rotateY(160deg);
+                    &:hover {
+                        font-size: 4rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+    .display {
+        display: none;
+    }
+    
+    .active {
+        display: block;
+    }
+    
+    ion-icon {
+        font-size: 2rem;
+    }
+    
+}
