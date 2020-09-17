@@ -184,11 +184,6 @@ body .movie-container select {
   width: 300px;
 }
 
-body .move-container:hover {
-  background-color: #ff000044;
-  color: white;
-}
-
 body .container {
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -295,11 +290,5 @@ body p.text span {
 .bio {
   margin-left: 400px;
   margin-top: -400px;
-}
-
-@media only screen and (max-width: 1080px) {
-  main {
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=Bestil.css.map */
