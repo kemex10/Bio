@@ -50,13 +50,28 @@ body main #footer article {
           justify-content: space-between;
 }
 
+<<<<<<< HEAD
 body main #footer article ul, body main #footer article a, body main #footer article p {
+=======
+main #footer article span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main #footer article ul, main #footer article a, main #footer article p {
+>>>>>>> f8956a368bde53f6c3c2d7c316b306c554fc2705
   list-style-type: none;
   text-decoration: none;
   color: white;
   font-size: 1rem;
 }
 
+<<<<<<< HEAD
 body .overlay {
   height: 100%;
   width: 0;
@@ -133,5 +148,60 @@ body .burger .vid-border {
 
 body .burger body {
   background-color: #393E46;
+=======
+main #footer article img {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+    height: 100vh;
+  }
+  main #footer {
+    width: 100%;
+    background-color: #393E46;
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  main #footer article {
+    width: 90%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main #footer article span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 2rem;
+  }
+  main #footer article ul, main #footer article a, main #footer article p {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  main #footer article img {
+    width: 30%;
+  }
+>>>>>>> f8956a368bde53f6c3c2d7c316b306c554fc2705
 }
 /*# sourceMappingURL=navFooter.css.map */
