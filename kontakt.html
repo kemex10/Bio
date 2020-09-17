@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt os</title>
     <link rel="stylesheet" href="/Scss/Main.css">
+    <link rel="stylesheet" href="Scss/navFooter.css">
 </head>
 
 <body>
+    <section id="header">
+        <article>
+            <header>
+                <img src="./Gfx/logo.png" alt="logo" />
+            </header>
+            <footer>
+                <span>
+                    <ion-icon name="arrow-back-outline" id="button"></ion-icon>
+                </span>
+                <div id="animation">
+                    <div id="start" class="display"></div>
+                    <div id="end" class="display"></div>
+                </div>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Om Biografen</a></li>
+                    <li class="newUl"><a href="#">Film</a>
+                        <ul>
+                            <li><a href="#">Cyber</a></li>
+                            <li><a href="#">Nether</a></li>
+                            <li><a href="#">Lands</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tilmelding</a></li>
+                    <li><a href="#">Billet bestilling</a></li>
+                    <li><a href="#">Kontakt</a></li>
+
+                </ul>
+            </footer>
+        </article>
+    </section>
 <main class="contactmain">
     
     <form id="contactform" action="">
@@ -22,8 +54,11 @@
         </div>
     </form>
 </main>
-
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="JS/lottie.js"></script>
+<script src="JS/header.js"></script>
 <script src="/JS/kontakt.js"></script>
+
 </body>
 
 </html>

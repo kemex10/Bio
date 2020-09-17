@@ -10,8 +10,8 @@ body {
 #aboutmain {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 900px 607px 407px 508px;
-      grid-template-rows: 900px 607px 407px 508px;
+  -ms-grid-rows: 550px 650px 500px 500px;
+      grid-template-rows: 550px 650px 500px 500px;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   background-color: #1B262C;
@@ -28,25 +28,13 @@ body {
       -ms-grid-row-align: center;
       align-self: center;
   width: 100%;
-  overflow: hidden;
-}
-
-#modal {
-  text-align: center;
-  color: white;
-}
-
-#modal img {
-  display: relative;
-  width: 100%;
-  height: 75%;
 }
 
 .slides {
   display: none;
 }
 
-.slideOverlay {
+.overlay {
   color: #BBE1FA;
   font-size: 100px;
   font-weight: normal;
@@ -55,6 +43,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .aboutpara p {
@@ -73,10 +62,32 @@ body {
   font-size: 18px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
+  -ms-grid-columns: 40% 50%;
+      grid-template-columns: 40% 50%;
   -ms-grid-rows: 15% 20% 10% 15% 15% 15% 10%;
       grid-template-rows: 15% 20% 10% 15% 15% 15% 10%;
+  -webkit-column-gap: 6%;
+          column-gap: 6%;
+}
+
+#modal {
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 8;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#modal img {
+  display: relative;
+  width: 100%;
+  height: 75%;
 }
 
 #aboutone h2 {
@@ -84,7 +95,7 @@ body {
       grid-column-start: 1;
   -ms-grid-row: 2;
       grid-row-start: 2;
-  margin-left: 10%;
+  margin-left: 4%;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
@@ -97,7 +108,7 @@ body {
       grid-row-start: 3;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 #ptwo {
@@ -107,7 +118,7 @@ body {
       grid-row-start: 4;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 #pthree {
@@ -117,35 +128,12 @@ body {
       grid-row-start: 5;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-left: 10%;
+  margin-left: 4%;
 }
 
 #aboutfront {
-  margin-right: 15%;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
-  grid-row-end: 8;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  width: 420px;
-  height: 416px;
-}
-
-#abouttwo {
-  -ms-grid-row: 3;
-      grid-row-start: 3;
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  color: #ffffff;
-  font-size: 18px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  width: 100%;
+  height: 550px;
 }
 
 #aboutthree {
@@ -219,6 +207,18 @@ body {
       align-self: end;
 }
 
+#abouttwo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  color: #ffffff;
+  font-size: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 #abouttwo p {
   max-width: 65%;
 }
@@ -231,27 +231,24 @@ body {
         grid-template-rows: 515px 800px 407px 400px;
   }
   #aboutfront {
-    width: 60%;
+    width: 100%;
     height: 40%;
-    -ms-grid-column: 1;
-        grid-column-start: 1;
-    -ms-grid-row: 5;
-        grid-row-start: 5;
-    grid-row-end: 6;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    -ms-grid-column-align: center;
-        justify-self: center;
-    margin: 0;
   }
   #aboutone {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 10% 10% 15% 15% 45%;
-        grid-template-rows: 10% 10% 15% 15% 45%;
+    -ms-grid-rows: 10% 10% 10% 10% 60%;
+        grid-template-rows: 10% 10% 10% 10% 60%;
+    overflow: hidden;
+  }
+  #modal {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
   }
   #pone {
     -ms-grid-row: 2;

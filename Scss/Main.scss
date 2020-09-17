@@ -12,7 +12,7 @@ body {
 //Anden række er første sektion og har også sit eget gridsystem
 #aboutmain {
     display: grid;
-    grid-template-rows: 900px 607px 407px 508px;
+    grid-template-rows: 550px 650px 500px 500px;
     grid-template-columns: 100%;
     background-color: #1B262C;
 }
@@ -22,21 +22,12 @@ body {
     justify-self: center;
     align-self: center;
     width: 100%;
-    overflow: hidden;
 }
-#modal {
-    text-align: center;
-    color: white;
-}
-#modal img {
-    display: relative;
-    width: 100%;
-    height: 75%;
-}
+
 .slides {
     display: none;
 }
-.slideOverlay {
+.overlay {
     color: #BBE1FA;
     font-size: 100px;
     font-weight: normal;
@@ -44,6 +35,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 .aboutpara p {
     margin-left: 6%;
@@ -60,52 +52,53 @@ body {
     color: #ffffff;
     font-size: 18px;
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 40% 50%;
     grid-template-rows: 15% 20% 10% 15% 15% 15% 10%;
+    column-gap: 6%;
+}
+#modal {
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    justify-self: center;
+    align-self: center;
+}
+#modal img {
+    display: relative;
+    width: 100%;
+    height: 75%;
 }
 #aboutone h2 {
     grid-column-start: 1;
     grid-row-start: 2;
-    margin-left: 10%;
+    margin-left: 4%;
     align-self: end;
 }
 #pone {
     grid-column-start: 1;
     grid-row-start: 3;
     justify-self: start;
-    margin-left: 10%;
+    margin-left: 4%;
 }
 #ptwo {
     grid-column-start: 1;
     grid-row-start: 4;
     justify-self: start;
-    margin-left: 10%;
+    margin-left: 4%;
 
 }
 #pthree {
     grid-column-start: 1;
     grid-row-start: 5;
     justify-self: start;
-    margin-left: 10%;
+    margin-left: 4%;
 
 }
 #aboutfront {
-    margin-right: 15%;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 8;
-    justify-self: end;
-    align-self: center;
-    width: 420px;
-    height: 416px;
+    width: 100%;
+    height: 550px;
 
-}
-#abouttwo {
-    grid-row-start: 3;
-    grid-column-start: 1;
-    color: #ffffff;
-    font-size: 18px;
-    align-self: center;
 }
 //Tredje sektion har også sit eget gridsystem,
 //men ligesom det overordnede grid, har det kun én kolonne
@@ -156,6 +149,13 @@ body {
     grid-row-start: 2;
     align-self: end;
 }
+#abouttwo {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    color: #ffffff;
+    font-size: 18px;
+    align-self: center;
+}
 #abouttwo p {
     max-width: 65%;
 }
@@ -166,19 +166,21 @@ body {
         grid-template-rows: 515px 800px 407px 400px;
     }
     #aboutfront {
-        width: 60%;
+        width: 100%;
         height: 40%;
-        grid-column-start: 1;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        align-self: center;
-        justify-self: center;
-        margin: 0;
     }
+
     #aboutone {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 10% 10% 15% 15% 45%;
+        grid-template-rows: 10% 10% 10% 10% 60%;
+        overflow: hidden;
+
+    }
+    #modal {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        grid-row-end: 6;
     }
     #pone {
         grid-row-start: 2;
