@@ -1,13 +1,34 @@
-main {
+body {
+  background-color: #1B262C;
+}
+
+body main {
   width: 100%;
   height: 100vh;
 }
 
-main #hero {
+body main #hero {
+  width: 100%;
+  padding: 0.1rem;
+}
+
+<<<<<<< HEAD
+main #footer {
+=======
+body main #header {
+  background-color: #0F4C75;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 100%;
 }
 
-main #footer {
+body main #footer {
+>>>>>>> 9fa5e360ed53f33e53c7fd4eb5a516b8cf19643a
   background-color: #393E46;
   padding: 1rem;
   display: -webkit-box;
@@ -18,7 +39,7 @@ main #footer {
           align-items: flex-end;
 }
 
-main #footer article {
+body main #footer article {
   width: 90%;
   margin: 0 auto;
   display: -webkit-box;
@@ -33,7 +54,7 @@ main #footer article {
           justify-content: space-between;
 }
 
-main #footer article span {
+body main #footer article span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,23 +64,23 @@ main #footer article span {
           flex-direction: column-reverse;
 }
 
-main #footer article ul, main #footer article a, main #footer article p {
+body main #footer article ul, body main #footer article a, body main #footer article p {
   list-style-type: none;
   text-decoration: none;
   color: white;
   font-size: 1rem;
 }
 
-main #footer article img {
+body main #footer article img {
   width: 30%;
 }
 
 @media (max-width: 768px) {
-  main {
+  body main {
     width: 100%;
     height: 100vh;
   }
-  main #footer {
+  body main #footer {
     width: 100%;
     background-color: #393E46;
     padding: 1rem;
@@ -70,7 +91,7 @@ main #footer article img {
         -ms-flex-align: end;
             align-items: flex-end;
   }
-  main #footer article {
+  body main #footer article {
     width: 90%;
     margin: 0 auto;
     display: -webkit-box;
@@ -84,7 +105,7 @@ main #footer article img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  main #footer article span {
+  body main #footer article span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -94,17 +115,18 @@ main #footer article img {
             flex-direction: column-reverse;
     margin-bottom: 2rem;
   }
-  main #footer article ul, main #footer article a, main #footer article p {
+  body main #footer article ul, body main #footer article a, body main #footer article p {
     list-style-type: none;
     text-decoration: none;
     color: white;
     font-size: 1rem;
   }
-  main #footer article img {
+  body main #footer article img {
     width: 30%;
   }
 }
 
+<<<<<<< HEAD
 * {
   padding: 0;
   margin: 0;
@@ -113,12 +135,32 @@ main #footer article img {
 }
 
 #header {
+=======
+body .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #1B262C;
+  background-color: #1B262C;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .overlay-content {
+  position: relative;
+  top: 25%;
+>>>>>>> 9fa5e360ed53f33e53c7fd4eb5a516b8cf19643a
   width: 100%;
   background-color: aliceblue;
   -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 }
 
+<<<<<<< HEAD
 #header img {
   width: 40%;
 }
@@ -314,5 +356,78 @@ ion-icon {
   ion-icon {
     font-size: 2rem;
   }
+=======
+body .overlay a {
+  width: 20%;
+  margin: 1rem auto;
+  line-height: 100%;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+body .film .showFilm {
+  overflow: hidden;
+  display: none;
+}
+
+body .film .showFilm a {
+  font-size: 1rem;
+}
+
+body .film:hover > .showFilm {
+  display: block;
+}
+
+body .overlay-content a:hover {
+  color: #f1f1f1;
+  border-bottom: 2px solid white;
+}
+
+body .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  body .overlay a {
+    font-size: 20px;
+  }
+  body .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+body .burger {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: #f1f1f1;
+  font-size: 50px;
+  cursor: pointer;
+  height: 50%;
+  width: -50%;
+}
+
+body .burger .vid-border {
+  position: relative;
+  height: 480px;
+  width: 100%;
+  border: 5px solid black;
+  padding: 1rem;
+  margin: 10px auto;
+}
+
+body .burger body {
+  background-color: #393E46;
+>>>>>>> 9fa5e360ed53f33e53c7fd4eb5a516b8cf19643a
 }
 /*# sourceMappingURL=navFooter.css.map */

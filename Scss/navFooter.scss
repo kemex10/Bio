@@ -1,12 +1,25 @@
 $background-color: #393E46;
 $navbar-color: #0F4C75;   
-    
+body{
+  background-color: #1B262C;  
 main {
     width: 100%;
     height: 100vh;
+    
     #hero {
     width: 100%;
+    padding: 0.1rem;
     }
+<<<<<<< HEAD
+=======
+    #header {
+        background-color: $navbar-color;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+    }
+>>>>>>> 9fa5e360ed53f33e53c7fd4eb5a516b8cf19643a
     #footer {
         background-color: $background-color;
         padding: 1rem;

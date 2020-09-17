@@ -6,18 +6,31 @@ function openNav() {
     document.getElementById("myNav").style.width = "0%";
   }
 
-  /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
+  function myFunction() {
+    let x = document.getElementById("Burger");
+    if (x.className === "burger") {
+      x.className += " responsive";
+    } else {
+      x.className = "burger";
+    }
+  }
+
+  function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
-      if (myDropdown.classList.contains('show')) {
-        myDropdown.classList.remove('show');
+  function filterFunction() {
+    let input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
       }
     }
   }
