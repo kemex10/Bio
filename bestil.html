@@ -11,25 +11,37 @@
 
 <body>
     <main>
-        <section id="header"> 
-        <img class="logo"src="Gfx/logo.png" alt="Logo" style="position: relative;
-        top: 10px;
-        left: 100px; width:5%;">
-         
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="Index.html">Hjem</a>
-              <a href="ombio.html">Om Biografen</a>
-              <a href="aktuelt.html">Alle Kørende Film</a>
-              <a href="tilmelding.html">Tilmelding</a>
-              <a href="bestil.html">Billet Bestiling</a>
-              <a href="kontakt.html">Kontakt</a>   
-              </div>
-            </div>
-        <span class="burger" onclick="openNav()">&#9776; </span>
-        </div>
-    </section> 
+      <section id="header">
+        <article>
+            <header>
+                <img src="./Gfx/logo.png" alt="logo" />
+            </header>
+            <footer>
+                <span>
+                    <ion-icon name="arrow-back-outline" id="button"></ion-icon>
+                </span>
+                <div id="animation">
+                    <div id="start" class="display"></div>
+                    <div id="end" class="display"></div>
+                </div>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Om Biografen</a></li>
+                    <li class="newUl"><a href="#">Film</a>
+                        <ul>
+                            <li><a href="#">Cyber</a></li>
+                            <li><a href="#">Nether</a></li>
+                            <li><a href="#">Lands</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tilmelding</a></li>
+                    <li><a href="#">Billet bestilling</a></li>
+                    <li><a href="#">Kontakt</a></li>
+
+                </ul>
+            </footer>
+        </article>
+    </section>
 
 
     <section id="bestil">
@@ -265,6 +277,7 @@
             </article>
         </section>
     </main>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="js/lottie.js"></script>
         <script src="js/header.js"></script>
         <script src="JS/App.js"></script>

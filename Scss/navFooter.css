@@ -119,7 +119,7 @@ body * {
 
 body #header {
   width: 100%;
-  background-color: aliceblue;
+  background-color: #0F4C75;
   -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.1);
 }

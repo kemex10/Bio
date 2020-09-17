@@ -39,7 +39,7 @@ h1{
 font-size: 50px;
 color: #ffffff;
 position:absolute;
-top:150px;
+top:200px;
 left:300px;
 }
 
@@ -104,7 +104,6 @@ font-size: medium;
 button{
   display:flex;
   flex-direction:column;
-  margin-top: 50px;
   width: 300px;
   font-size: 16px;
 span{
@@ -126,6 +125,8 @@ vertical-align: middle;
   white-space: nowrap;
 
   padding-top: 50px;
+
+  padding-bottom: 50px;
 
 }
 
@@ -244,7 +245,7 @@ body {
 }
 .bio{
 margin-left: 400px;
-margin-top: -500px;
+margin-top: -400px;
 }
 @media only screen and (max-width: 1080px) {
   main {
