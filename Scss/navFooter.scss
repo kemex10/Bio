@@ -205,7 +205,7 @@ ion-icon {
                     .newUl {
                         position: relative;
                         &:hover > ul {
-                            opacity: 1;
+                            display: block;
                             transition: opacity .5 ease-in-out;
                         }
                     }
@@ -215,7 +215,7 @@ ion-icon {
                         top: 50%;
                         left: 0;
                         transform: translate(-110%, -50%);
-                        opacity: 0;
+                        display: none;
                         transition: opacity .5 ease-in-out;
                         a {
                             font-size: 1rem;

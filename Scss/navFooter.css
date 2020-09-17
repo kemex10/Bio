@@ -281,7 +281,7 @@ body ion-icon {
     position: relative;
   }
   body #header article footer #menu .newUl:hover > ul {
-    opacity: 1;
+    display: block;
     -webkit-transition: opacity .5 ease-in-out;
     transition: opacity .5 ease-in-out;
   }
@@ -292,7 +292,7 @@ body ion-icon {
     left: 0;
     -webkit-transform: translate(-110%, -50%);
             transform: translate(-110%, -50%);
-    opacity: 0;
+    display: none;
     -webkit-transition: opacity .5 ease-in-out;
     transition: opacity .5 ease-in-out;
   }
