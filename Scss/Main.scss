@@ -164,11 +164,11 @@ body {
 #abouttwo p {
     max-width: 65%;
 }
-//Media query
+//Media query om bio
 @media only screen and (max-width: 768px) {
     #aboutmain {
         display: grid;
-        grid-template-rows: 515px 800px 407px 400px 980px;
+        grid-template-rows: 515px 800px 407px 400px 500px;
     }
     #aboutfront {
         width: 60%;
@@ -242,3 +242,109 @@ body {
 }
 
 //Kontakt
+.contactmain {
+    background-color: #1B262C;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactmain form{
+    height: 65vh;
+    width: 75%;
+    background-color: #0F4C75;
+}
+.contact {
+    background-color: #DDDDDD;
+    border: #DDDDDD;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #707070;
+}
+#contactgrid {
+    width: 100%;
+    height: 100%;
+display: grid;
+grid-template-columns: 10% 40% 40% 10%;
+grid-template-rows: 30% 50% 20%;
+align-items: end;
+}
+.contactInput {
+    height: 40px;
+    width: 250px;
+    margin-bottom: 32px;
+}
+#contactButton {
+    background-color: #BBE1FA;
+    width: 250px;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #707070;
+    cursor: pointer;
+}
+#colone {
+    width: 60%;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-self: end;
+    margin-bottom: 3px;
+}
+#coltwo {
+    grid-column-start: 3;
+    grid-row-start: 2;
+
+}
+#contactDescribe {
+    resize: none;
+}
+.contactmain form h1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 20px;
+    font-size: 60px;
+    color: #BBE1FA;
+    font-weight: normal;
+}
+
+//media query kontakt
+@media only screen and (max-width: 768px) {
+    .contactmain form {
+        height: 100vh;
+        width: 90%;
+    }
+    #contactgrid {
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 35% 35%;  
+    }
+        .contactmain form h1 {
+            margin: 0;
+            grid-column-start: 1;
+            grid-column-start: 1;
+            align-self: center;
+            justify-self: center;
+        }
+    #colone {
+        width: 35%;
+        margin: 0;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        justify-self: center;
+    }
+    #coltwo {
+        margin: 0;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        justify-self: center;
+    }
+    #contactDescribe {
+        margin: 0;
+    }
+
+}
