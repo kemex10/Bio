@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+$general-white-color: #FFFFFF;
+$background-color: #242333;
+$standard-seat-color: #52C78E;
+$selected-seats: #dacb00;
+$occupied-seats: #C75252;
+$handicap-seat: #0099ff; 
+$box-shadow-color: rgba(255, 255, 255, 0.7);
+$showcase-color: rgba(0, 0, 0, 0.1);
+$showcase-col: #777777;
+$text-color: #52C78E;
+$navbar-color: #0F4C75; 
+* {
+  box-sizing: border-box;
+}
+main {
+    width: 100%;
+    height: 100vh;
+    
+    #bestil {
+    width: 70%;
+    padding: 10rem;
+    background-color: $navbar-color;
+    box-sizing: border-box;
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-items: center;
+    color: #ffffff;
+    }
+    #header {
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+    }
+}
+h1{
+font-size: 50px;
+color: #ffffff;
+position:absolute;
+top:200px;
+left:300px;
+}
+
+.dropbtn {
+    background-color: #ffffff;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    width: 318px;
+    border: 2px solid black;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ffffff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 300px;
+    border:2px solid black ;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+  
+  label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+    margin-right: 0.5rem;
+    padding: 5px;
+}
+h3{
+color: #ffffff;
+font-size: medium;
+}
+
+button{
+  display:flex;
+  flex-direction:column;
+  width: 300px;
+  font-size: 16px;
+span{
+text-align: center;
+margin: 0 auto;
+vertical-align: middle;
+}
+}
+.button:hover {
+  background-color: #ff000044;
+  color: white;
+}
+.checkboxes label {
+
+  display: inline-block;
+
+  padding-right: 10px;
+
+  white-space: nowrap;
+
+  padding-top: 50px;
+
+  padding-bottom: 50px;
+
+}
+
+.checkboxes input {
+
+  vertical-align: middle;
+  width:30px;
+  height:30px;
+
+}
+
+.checkboxes label span {
+
+  vertical-align: middle;
+
+}
+
+body {
+  background-color: $background-color;
+  color: $general-white-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  .movie-container {
+      margin: 20px 0;
+      select {
+          background-color: $general-white-color;
+          border: 0;
+          font-size: 14px;
+          padding: 5px 15px 5px 15px;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          appearance: none;
+          width: 300px;
+      }
+  }
+  .container {
+      perspective: 1000px;
+      margin-bottom: 30px;
+  }
+  .seat {
+      background-color: $standard-seat-color;
+      height: 24px;
+      width: 30px;
+      margin: 3px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      &.selected {
+          background-color: $selected-seats;
+      }
+      &.occupied {
+          background-color: $occupied-seats;
+      }
+      &.handicapped {
+        background-color: $handicap-seat;
+    }
+      &:nth-of-type(2) {
+          margin-right: 18px;
+      }
+      &:nth-last-of-type(2) {
+          margin-left: 18px;
+      }
+      &:not(.occupied):hover {
+          cursor: pointer;
+          transform: scale(1.2);
+      }
+  }
+  .showcase {
+      background-color: $showcase-color;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: $showcase-col;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      &.seat:not(.occupied):hover {
+          cursor: default;
+          transform: scale(1);
+      }
+      
+      li {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 10px;
+          small {
+              margin-left: 2px;
+          }
+      }
+  }
+  .row {
+      display: flex;
+  }
+  .screen {
+      background-color: $background-color;
+      height: 150px;
+      width: 100%;
+      margin: 15px 0;
+      transform: rotateX(-45deg);
+      box-shadow: 0 3px 10px $background-color;
+  }
+  p.text {
+      margin: 5px 0;
+  span {
+      color: $text-color;
+  }
+  }
+}
+.bio{
+margin-left: 400px;
+margin-top: -400px;
+}

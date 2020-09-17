@@ -1,0 +1,229 @@
+@media (min-width: 768px) {
+  #tilmeld {
+    width: 100%;
+    height: 100vh;
+    background-color: #1B262C;
+    position: relative;
+  }
+  #tilmeld article {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+  }
+  #tilmeld article #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #0F4C75;
+    padding: 2rem;
+  }
+  #tilmeld article #form h2 {
+    color: #BBE1FA;
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  #tilmeld article #form span {
+    color: white;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  #tilmeld article #form #email, #tilmeld article #form #name, #tilmeld article #form #alder {
+    width: 50%;
+    padding: .5rem 2rem;
+    border: none;
+    background-color: #D6D6D6;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  #tilmeld article #form ::-webkit-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form :-ms-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form ::-ms-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form ::placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+  }
+  #tilmeld article #form button {
+    width: 50%;
+    padding: .5rem 2rem;
+    background-color: #BBE1FA;
+    border: none;
+    outline: none;
+    color: #707070;
+    font-weight: bold;
+  }
+  #tilmeld article #form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  #tilmeld article #form div label[for="checkbox"] {
+    color: white;
+    margin-left: 1rem;
+  }
+  #tilmeld article #information {
+    background-color: #D6D6D6;
+    padding: 2rem;
+    color: #707070;
+  }
+  #tilmeld article #information h2 {
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  #tilmeld article #information .prices p {
+    margin-bottom: .25rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+  }
+  #tilmeld article #information .prices p strong {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 768px) {
+  #tilmeld {
+    width: 100%;
+    height: auto;
+    background-color: #1B262C;
+    padding: 2rem;
+  }
+  #tilmeld article {
+    width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+  #tilmeld article #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #0F4C75;
+    padding: 2rem;
+  }
+  #tilmeld article #form h2 {
+    color: #BBE1FA;
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  #tilmeld article #form span {
+    color: white;
+    margin: 2rem 0 1rem 0;
+    font-size: 2rem;
+  }
+  #tilmeld article #form #email, #tilmeld article #form #name, #tilmeld article #form #alder {
+    width: 100%;
+    padding: .5rem 2rem;
+    border: none;
+    background-color: #D6D6D6;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+  #tilmeld article #form ::-webkit-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form :-ms-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form ::-ms-input-placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form ::placeholder {
+    font-weight: bold;
+  }
+  #tilmeld article #form div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+  }
+  #tilmeld article #form button {
+    width: 100%;
+    padding: .5rem 2rem;
+    background-color: #BBE1FA;
+    border: none;
+    outline: none;
+    color: #707070;
+    font-weight: bold;
+  }
+  #tilmeld article #form div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 3rem;
+  }
+  #tilmeld article #form div label[for="checkbox"] {
+    color: white;
+    margin-left: 1rem;
+  }
+  #tilmeld article #information {
+    background-color: #D6D6D6;
+    padding: 2rem;
+    color: #707070;
+  }
+  #tilmeld article #information h2 {
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  #tilmeld article #information .prices p {
+    margin-bottom: .25rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto 1fr;
+        grid-template-columns: auto 1fr;
+  }
+  #tilmeld article #information .prices p strong {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-weight: normal;
+  }
+}
+/*# sourceMappingURL=tilmeld.css.map */
