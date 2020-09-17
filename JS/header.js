@@ -22,17 +22,15 @@ const menu = document.getElementById('menu')
 button.addEventListener('click', () => {
     if (!started.classList.contains('active')) {
         started.classList.toggle('active')
-        ended.classList.remove('active')
         start.playSegments([0, 60], true)
         button.name = "arrow-forward-outline"
-        button.style.color = "white"
         menu.style.display = "block"
     } else {
         started.classList.toggle('active')
         ended.classList.toggle('active')
         end.playSegments([0, 60], true)
         button.name = "arrow-back-outline"
-        button.style.color = "black"
         menu.style.display = "none"
+        ended.classList.remove('active')
     }
 })

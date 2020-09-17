@@ -78,7 +78,7 @@ main {
 
 #header {
     width: 100%;
-    background-color: aliceblue;
+    background-color: #0F4C75;
     box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
     img {
         width: 40%;
@@ -163,6 +163,7 @@ main {
 
 ion-icon {
     font-size: 2rem;
+    color: white;
 }
 
 @media (max-width: 768px) {
