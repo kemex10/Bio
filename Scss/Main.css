@@ -227,8 +227,8 @@ body {
   #aboutmain {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 515px 800px 407px 400px 500px;
-        grid-template-rows: 515px 800px 407px 400px 500px;
+    -ms-grid-rows: 515px 800px 407px 400px;
+        grid-template-rows: 515px 800px 407px 400px;
   }
   #aboutfront {
     width: 60%;
