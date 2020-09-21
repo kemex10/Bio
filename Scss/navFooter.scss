@@ -96,13 +96,13 @@ main {
                 top: 0;
                 left: 0;
                 width: 100%;
-                z-index: 2;
+                z-index: 1;
             }
             span {
                 display: flex;
                 justify-content: flex-end;
                 position: relative;
-                z-index: 3;
+                z-index: 4;
             }
             #menu {
                 list-style-type: none;
@@ -111,7 +111,7 @@ main {
                 right: 10%;
                 display: none;
                 transform: rotateX(20deg) rotateY(20deg);
-                z-index: 4;
+                z-index: 3;
                 & > li:hover{
                     border-bottom: 2px solid white;
                 }
@@ -169,7 +169,7 @@ ion-icon {
 @media (max-width: 768px) {
     #header {
         width: 100%;
-        background-color: aliceblue;
+        background-color: #0F4C75;
         box-shadow: 1px 1px 12px rgba(0,0,0,0.1);
         article {
             width: 90%;
@@ -185,12 +185,13 @@ ion-icon {
                     top: 0;
                     left: 0;
                     width: 300%;
+                    z-index: 1;
                 }
                 span {
                     display: flex;
                     justify-content: flex-end;
                     position: relative;
-                    z-index: 1;
+                    z-index: 3;
                 }
                 #menu {
                     list-style-type: none;
@@ -199,6 +200,7 @@ ion-icon {
                     right: 10%;
                     display: none;
                     transform: rotateX(25deg) rotateY(20deg);
+                    z-index: 2;
                     & > li:hover{
                         border-bottom: 2px solid white;
                     }

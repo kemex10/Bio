@@ -49,8 +49,12 @@ $text-color: #707070;
                     padding: .5rem 2rem;
                     border: none;
                     background-color: $information-color;
-                    margin-bottom: 1rem;
+                    margin-top: 1rem;
                     outline: none;
+                }
+                .emailError {
+                    margin-top: 0;
+                    font-size: .85rem;
                 }
                 ::placeholder { font-weight: bold; }
                 div {
@@ -65,6 +69,7 @@ $text-color: #707070;
                     outline: none;
                     color: $text-color;
                     font-weight: bold;
+                    cursor: pointer;
                 }
                 div {
                     display: flex;
