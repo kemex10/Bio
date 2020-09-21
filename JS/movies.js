@@ -3,14 +3,14 @@ const secondRow = document.getElementById('voksen');
 const thirdRow = document.getElementById('senior');
 
 let movieArray = [
-    { image: 'poster01.jpg', alt: "Movies poster", title: "Antebellum", beskrivelse: "Lorem ipsum here...", year: "18+" },
-    { image: 'poster02.jpg', alt: "Movies poster", title: "Martin Eden", beskrivelse: "Lorem ipsum here...", year: "13+" },
-    { image: 'poster03.jpg', alt: "Movies poster", title: "Love Life", beskrivelse: "Lorem ipsum here...", year: "13+" },
-    { image: 'poster04.jpg', alt: "Movies poster", title: "David Copper", beskrivelse: "Lorem ipsum here...", year: "A+" },
-    { image: 'poster05.jpg', alt: "Movies poster", title: "Til Sama", beskrivelse: "Lorem ipsum here...", year: "13+" },
-    { image: 'poster06.jpg', alt: "Movies poster", title: "Wendy", beskrivelse: "Lorem ipsum here...", year: "A+" },
-    { image: 'poster07.jpg', alt: "Movies poster", title: "Officer", beskrivelse: "Lorem ipsum here...", year: "13+" },
-    { image: 'poster08.jpg', alt: "Movies poster", title: "Ida", beskrivelse: "Lorem ipsum here...", year: "18+" },
+    { image: 'poster01.jpg', alt: "Movies poster", title: "Antebellum", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
+    { image: 'poster02.jpg', alt: "Movies poster", title: "Martin Eden", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
+    { image: 'poster03.jpg', alt: "Movies poster", title: "Love Life", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
+    { image: 'poster04.jpg', alt: "Movies poster", title: "David Copper", beskrivelse: "Lorem ipsum should be around here...", year: "A+" },
+    { image: 'poster05.jpg', alt: "Movies poster", title: "Til Sama", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
+    { image: 'poster06.jpg', alt: "Movies poster", title: "Wendy", beskrivelse: "Lorem ipsum should be around here...", year: "A+" },
+    { image: 'poster07.jpg', alt: "Movies poster", title: "Officer", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
+    { image: 'poster08.jpg', alt: "Movies poster", title: "Ida", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
 ];
 
 let addHtml = "";
@@ -60,11 +60,9 @@ function movieSlide() {
     thirdCount > 1 ? thirdCount = 0 : null;
     thirdCount < 0 ? thirdCount = 1 : null;
 
-
     countAbove(firstCount, first)
     countAbove(secondCount, second)
     countAbove(thirdCount, third)
-
 }
 
 function countAbove(count, dom) {
@@ -79,18 +77,36 @@ function displayNone(props) {
 }
 
 function firstLine(props) {
-    for (i = 0; i < props.length - 4; i++) {
-        props[i].style.display = "block"
+    if (window.innerWidth < 768) {
+        for (i = 0; i < props.length - 6; i++) {
+            props[i].style.display = "block"
+        }
+    }
+    if (window.innerWidth > 768) {
+        for (i = 0; i < props.length - 4; i++) {
+            props[i].style.display = "block"
+        }
     }
 }
 
 function secondLine(props) {
-    for (i = 0; i < props.length / 2 + 4; i++) {
-        props[i].style.display = "block"
-    }
+    if (window.innerWidth < 768) {
+        for (i = 0; i < props.length / 2 + 2; i++) {
+            props[i].style.display = "block"
+        }
 
-    for (i = 0; i < props.length / 2; i++) {
-        props[i].style.display = "none"
+        for (i = 0; i < props.length / 2; i++) {
+            props[i].style.display = "none"
+        }
+    }
+    if (window.innerWidth > 768) {
+        for (i = 0; i < props.length / 2 + 4; i++) {
+            props[i].style.display = "block"
+        }
+
+        for (i = 0; i < props.length / 2; i++) {
+            props[i].style.display = "none"
+        }
     }
 }
 

@@ -1,14 +1,144 @@
+$background-color: #393E46;
+$navbar-color: #0F4C75;   
+
 #aktuelt {
     width: 100%;
     display: flex;
     flex-direction: column;
-    #boern, #voksen, #senior {
-        width: 100%;
+    h1 {
         display: flex;
         justify-content: center;
+        margin: 1rem;
+        font-size: 4rem;
+        font-weight: 400;
+        color: #BBE1FA;
+    }
+    #firstRow, #secondRow, #thirdRow {
+        position: relative;        
+        margin: 2rem 0;
+        .title {
+            color: #BBE1FA;
+            font-size: 2rem;
+            font-weight: 400;
+            width: 55%;
+            margin: 0 auto;
+            margin-bottom: .5rem;
+        }
+        .skipped {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+    }
+    #boern, #voksen, #senior {
+        width: 65%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
         .movie {
             display: flex;
             flex-direction: column;
+            color: white;
+            margin: 0 1rem;
+            header {
+                cursor: pointer;
+                & img {
+                    width: 100%;
+                }
+            }
+            footer {
+                padding: 1rem;
+                background-color: $navbar-color;
+                h2 {
+                    font-size: 1rem;
+                }
+                p {
+                    font-size: .75rem;
+                }
+                span {
+                    display: flex;
+                    justify-content: flex-end;
+                    margin-top: .5rem;
+                    font-size: .75rem;
+                }
+            }
         }
     }
 } 
+
+@media (max-width: 768px) {
+    #aktuelt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+            font-size: 3rem;
+            font-weight: 400;
+            color: #BBE1FA;
+        }
+        #firstRow, #secondRow, #thirdRow {
+            position: relative;        
+            margin: 2rem 0;
+            .title {
+                color: #BBE1FA;
+                font-size: 2rem;
+                font-weight: 400;
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: .5rem;
+            }
+            .skipped {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+            }
+        }
+        #boern, #voksen, #senior {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .movie {
+                display: flex;
+                flex-direction: column;
+                color: white;
+                margin: 0 1rem;
+                header {
+                    cursor: pointer;
+                    & img {
+                        width: 100%;
+                    }
+                }
+                footer {
+                    padding: 1rem;
+                    background-color: $navbar-color;
+                    h2 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: .75rem;
+                    }
+                    span {
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-top: .5rem;
+                        font-size: .75rem;
+                    }
+                }
+            }
+        }
+    } 
+}
