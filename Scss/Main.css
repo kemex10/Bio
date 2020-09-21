@@ -10,11 +10,18 @@ body {
 #aboutmain {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 550px 650px 500px 500px;
-      grid-template-rows: 550px 650px 500px 500px;
+  -ms-grid-rows: 550px 650px 500px 500px 130px;
+      grid-template-rows: 550px 650px 500px 500px 130px;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   background-color: #1B262C;
+}
+
+#aboutmain #footer {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
 }
 
 #abouthead {
@@ -317,6 +324,10 @@ body {
   background-color: #1B262C;
   width: 100%;
   height: 100vh;
+}
+
+#contactsection {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,10 +339,17 @@ body {
           align-items: center;
 }
 
-.contactmain form {
+#contactsection form {
   height: 65vh;
   width: 75%;
   background-color: #0F4C75;
+}
+
+.contactmain #footer {
+  height: 130px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .contact {
