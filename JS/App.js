@@ -43,3 +43,9 @@ container.addEventListener("click", (e) => {
   }
 });
 updateSelectedCount();
+
+let vid = document.getElementById("movie");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
