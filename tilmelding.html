@@ -53,13 +53,14 @@
                 <form id="form">
                     <h2>SENIOR BIO</h2>
                     <span>TILMELDING</span>
-                    <input type="text" id="name" placeholder="NAVN" />
-                    <input type="text" id="email" placeholder="EMAIL" />
-                    <span class="emailError">You need to use @ and a dot to have an eligible email</span>
-                    <input type="text" id="alder" placeholder="ALDER" />
+                    <input type="text" id="name" placeholder="NAVN" required />
+                    <input type="text" id="email" placeholder="EMAIL"  required/>
+                    <input type="text" id="alder" placeholder="ALDER" required />
                     <div>
-                        <input type="checkbox" id="checkbox" required />
-                        <label for="checkbox">Jeg acceptere terms and service</label>
+                        <label class="container"><h4>Jeg acceptere terms and service</h4>
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
                     </div>
 
                     <button type="submit" id="submit">TILMELD</button>
