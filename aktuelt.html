@@ -4,11 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Scss/Main.css">
+    <link rel="stylesheet" href="Scss/navFooter.css">
+    <link rel="stylesheet" href="Scss/aktuel.css">
+
     <title>Document</title>
 </head>
 
 <body>
+    <main>
+        <section id="header">
+            <article>
+                <header>
+                    <img src="./Gfx/logo.png" alt="logo" />
+                </header>
+                <footer>
+                    <span>
+                        <ion-icon name="arrow-back-outline" id="button"></ion-icon>
+                    </span>
+                    <div id="animation">
+                        <div id="start" class="display"></div>
+                        <div id="end" class="display"></div>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Om Biografen</a></li>
+                        <li class="newUl"><a href="#">Film</a>
+                            <ul>
+                                <li><a href="#">Cyber</a></li>
+                                <li><a href="#">Nether</a></li>
+                                <li><a href="#">Lands</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Tilmelding</a></li>
+                        <li><a href="#">Billet bestilling</a></li>
+                        <li><a href="#">Kontakt</a></li>
 
+                    </ul>
+                </footer>
+            </article>
+        </section>
+
+        <section id="aktuelt">
+            <article id="firstRow">
+                <div>
+                    <div id="boern"></div>
+                    <div onclick="skip(this)">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div onclick="skip(this)">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </article>
+            <article id="secondRow">
+                <div id="voksen"></div>
+                <div>
+                    <div onclick="skip(1)">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div onclick="skip(-1)">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </article>
+            <article id="thirdRow">
+                <div id="senior"></div>
+                <div>
+                    <div onclick="skip(1)">
+                        <ion-icon name="arrow-back-outline"></ion-icon>
+                    </div>
+                    <div onclick="skip(-1)">
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="footer">
+            <article>
+                <span>
+                    <ul>
+                        <li><a href="#">
+                                <image src="Gfx/logo.png" alt="logo" /></a></li>
+                        <li><a href="#">Telefon: 55 33 23 16</a></li>
+                        <li><a href="#">E-mail: Biografen@mail.dk</a></li>
+                    </ul>
+                </span>
+                <span>
+                    <p>
+                        Biografen<br />
+                        Haveje 33-35<br />
+                        1840 Avedøre
+                    </p>
+                </span>
+                <span>
+                    <ul>
+                        <li><a href="#">www.biografen1.dk</a></li>
+                        <li><a href="#">Copyright 2020-2020</a></li>
+                        <li><a href="#">Biografen 1</a></li>
+                    </ul>
+                </span>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="JS/lottie.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="JS/movies.js"></script>
 </body>
 
 </html>
