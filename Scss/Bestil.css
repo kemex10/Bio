@@ -22,6 +22,10 @@ main #bestil {
       -ms-flex-align: center;
           align-items: center;
   color: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
 }
 
 main #header {
@@ -227,7 +231,9 @@ body .seat:not(.occupied):hover {
 body .showcase {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
+  margin-left: -13px;
   border-radius: 5px;
+  width: 107%;
   color: #777777;
   list-style-type: none;
   display: -webkit-box;
