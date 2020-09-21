@@ -35,21 +35,62 @@ firstRow.innerHTML = addHtml;
 secondRow.innerHTML = addHtml;
 thirdRow.innerHTML = addHtml;
 
-let movieCount = 0;
+const first = document.getElementById('firstRow').querySelectorAll('.movie');
+const second = document.getElementById('secondRow').querySelectorAll('.movie');
+const third = document.getElementById('thirdRow').querySelectorAll('.movie');
+let firstCount = 0;
+let secondCount = 0;
+let thirdCount = 0;
 
-function skip(n) {
-    movieSlide(movieCount += n)
-};
+function skipBoern(n) { movieSlide(firstCount += n) };
+function skipVoksen(n) { movieSlide(secondCount += n) };
+function skipSenior(n) { movieSlide(thirdCount += n) };
 
-function movieSlide(n) {
-    const movies = document.getElementById('firstRow').querySelectorAll('.movie');
+function movieSlide() {
+    displayNone(first)
+    displayNone(second)
+    displayNone(third)
 
-    for (i = 0; i < movies.length; i++) {
-        movies[i].style.display = "none"
+    firstCount > 1 ? firstCount = 0 : null;
+    firstCount < 0 ? firstCount = 1 : null;
+
+    secondCount > 1 ? secondCount = 0 : null;
+    secondCount < 0 ? secondCount = 1 : null;
+
+    thirdCount > 1 ? thirdCount = 0 : null;
+    thirdCount < 0 ? thirdCount = 1 : null;
+
+
+    countAbove(firstCount, first)
+    countAbove(secondCount, second)
+    countAbove(thirdCount, third)
+
+}
+
+function countAbove(count, dom) {
+    if (count == 1) { firstLine(dom) }
+    if (count == 0) { secondLine(dom) }
+}
+
+function displayNone(props) {
+    for (i = 0; i < props.length; i++) {
+        props[i].style.display = "none"
+    }
+}
+
+function firstLine(props) {
+    for (i = 0; i < props.length - 4; i++) {
+        props[i].style.display = "block"
+    }
+}
+
+function secondLine(props) {
+    for (i = 0; i < props.length / 2 + 4; i++) {
+        props[i].style.display = "block"
     }
 
-    for (i = 0; i < movies.length - 4; i++) {
-        movies[i].style.display = "block"
+    for (i = 0; i < props.length / 2; i++) {
+        props[i].style.display = "none"
     }
 }
 
