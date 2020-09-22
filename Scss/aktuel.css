@@ -1,0 +1,208 @@
+#aktuelt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#aktuelt h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #BBE1FA;
+}
+
+#aktuelt #firstRow, #aktuelt #secondRow, #aktuelt #thirdRow {
+  position: relative;
+  margin: 2rem 0;
+}
+
+#aktuelt #firstRow .title, #aktuelt #secondRow .title, #aktuelt #thirdRow .title {
+  color: #BBE1FA;
+  font-size: 2rem;
+  font-weight: 400;
+  width: 55%;
+  margin: 0 auto;
+  margin-bottom: .5rem;
+}
+
+#aktuelt #firstRow .skipped, #aktuelt #secondRow .skipped, #aktuelt #thirdRow .skipped {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+#aktuelt #boern, #aktuelt #voksen, #aktuelt #senior {
+  width: 65%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#aktuelt #boern .movie, #aktuelt #voksen .movie, #aktuelt #senior .movie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  margin: 0 1rem;
+}
+
+#aktuelt #boern .movie header, #aktuelt #voksen .movie header, #aktuelt #senior .movie header {
+  cursor: pointer;
+}
+
+#aktuelt #boern .movie header img, #aktuelt #voksen .movie header img, #aktuelt #senior .movie header img {
+  width: 100%;
+}
+
+#aktuelt #boern .movie footer, #aktuelt #voksen .movie footer, #aktuelt #senior .movie footer {
+  padding: 1rem;
+  background-color: #0F4C75;
+}
+
+#aktuelt #boern .movie footer h2, #aktuelt #voksen .movie footer h2, #aktuelt #senior .movie footer h2 {
+  font-size: 1rem;
+}
+
+#aktuelt #boern .movie footer p, #aktuelt #voksen .movie footer p, #aktuelt #senior .movie footer p {
+  font-size: .75rem;
+}
+
+#aktuelt #boern .movie footer span, #aktuelt #voksen .movie footer span, #aktuelt #senior .movie footer span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: .5rem;
+  font-size: .75rem;
+}
+
+@media (max-width: 768px) {
+  #aktuelt {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #aktuelt h1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #BBE1FA;
+  }
+  #aktuelt #firstRow, #aktuelt #secondRow, #aktuelt #thirdRow {
+    position: relative;
+    margin: 2rem 0;
+  }
+  #aktuelt #firstRow .title, #aktuelt #secondRow .title, #aktuelt #thirdRow .title {
+    color: #BBE1FA;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+  }
+  #aktuelt #firstRow .skipped, #aktuelt #secondRow .skipped, #aktuelt #thirdRow .skipped {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+  }
+  #aktuelt #boern, #aktuelt #voksen, #aktuelt #senior {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #aktuelt #boern .movie, #aktuelt #voksen .movie, #aktuelt #senior .movie {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+    margin: 0 1rem;
+  }
+  #aktuelt #boern .movie header, #aktuelt #voksen .movie header, #aktuelt #senior .movie header {
+    cursor: pointer;
+  }
+  #aktuelt #boern .movie header img, #aktuelt #voksen .movie header img, #aktuelt #senior .movie header img {
+    width: 100%;
+  }
+  #aktuelt #boern .movie footer, #aktuelt #voksen .movie footer, #aktuelt #senior .movie footer {
+    padding: 1rem;
+    background-color: #0F4C75;
+  }
+  #aktuelt #boern .movie footer h2, #aktuelt #voksen .movie footer h2, #aktuelt #senior .movie footer h2 {
+    font-size: 1rem;
+  }
+  #aktuelt #boern .movie footer p, #aktuelt #voksen .movie footer p, #aktuelt #senior .movie footer p {
+    font-size: .75rem;
+  }
+  #aktuelt #boern .movie footer span, #aktuelt #voksen .movie footer span, #aktuelt #senior .movie footer span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-top: .5rem;
+    font-size: .75rem;
+  }
+}
+/*# sourceMappingURL=aktuel.css.map */
