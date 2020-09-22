@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aboutmain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 550px 650px 500px 500px 130px;
+      grid-template-rows: 550px 650px 500px 500px 130px;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  background-color: #1B262C;
+}
+
+#aboutmain #footer {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+}
+
+#abouthead {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+}
+
+.slides {
+  display: none;
+}
+
+.overlay {
+  color: #BBE1FA;
+  font-size: 80px;
+  font-weight: normal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.aboutpara p {
+  margin-left: 6%;
+  line-height: 130%;
+  margin-bottom: 25px;
+}
+
+#aboutone {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  background-color: #0F4C75;
+  color: #ffffff;
+  font-size: 18px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 50%;
+      grid-template-columns: 40% 50%;
+  -ms-grid-rows: 15% 20% 10% 15% 15% 15% 10%;
+      grid-template-rows: 15% 20% 10% 15% 15% 15% 10%;
+  -webkit-column-gap: 6%;
+          column-gap: 6%;
+}
+
+#modal {
+  text-align: center;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 8;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#modal img {
+  display: relative;
+  width: 100%;
+  height: 75%;
+}
+
+#aboutone h2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  margin-left: 4%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#pone {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 4%;
+}
+
+#ptwo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 4%;
+}
+
+#pthree {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 4%;
+  top: 20px;
+}
+
+#aboutfront {
+  width: 100%;
+  height: 550px;
+}
+
+#aboutthree {
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  background-color: #0F4C75;
+  color: #ffffff;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
+      grid-template-rows: 10% 30% 10% 5.5% 5.5% 10% 10%;
+}
+
+#senp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+#firp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+#secp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+}
+
+#thip {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 6;
+      grid-row-start: 6;
+}
+
+#midp {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+}
+
+.aboutpara h2 {
+  color: #BBE1FA;
+  font-size: 80px;
+  font-weight: normal;
+  margin-left: 6%;
+  line-height: 150%;
+}
+
+#aboutthree h2 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#abouttwo {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  color: #ffffff;
+  font-size: 18px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#abouttwo p {
+  max-width: 65%;
+}
+
+@media only screen and (max-width: 768px) {
+  #aboutmain {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 515px 800px 407px 400px;
+        grid-template-rows: 515px 800px 407px 400px;
+  }
+  #aboutfront {
+    width: 100%;
+    height: 40%;
+  }
+  #aboutone {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 10% 10% 10% 10% 60%;
+        grid-template-rows: 10% 10% 10% 10% 60%;
+    overflow: hidden;
+  }
+  #modal {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  #pone {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #ptwo {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  #pthree {
+    margin-left: 6%;
+  }
+  #aboutone h2 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    margin-left: 6%;
+  }
+  .aboutpara h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin-left: 6%;
+    line-height: 150%;
+  }
+  #aboutthree {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 25% 15% 10% 10% 20% 20%;
+        grid-template-rows: 25% 15% 10% 10% 20% 20%;
+  }
+  #aboutthree h2 {
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    line-height: 80%;
+    margin-bottom: -20px;
+    word-spacing: 30px;
+  }
+  #senp {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  #firp {
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  #secp {
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+  #thip {
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
+  #midp {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+  }
+}
+/*# sourceMappingURL=Ombio.css.map */
