@@ -7,9 +7,9 @@ let movieArray = [
     { image: 'poster02.jpg', alt: "Movies poster", title: "Martin Eden", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
     { image: 'poster03.jpg', alt: "Movies poster", title: "Officer og Spion", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
     { image: 'poster04.jpg', alt: "Movies poster", title: "AFTER 2", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
-    { image: 'poster05.jpg', alt: "Movies poster", title: "THE KING", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
-    { image: 'poster06.jpg', alt: "Movies poster", title: "DAVID COPPERFIELD", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
-    { image: 'poster07.jpg', alt: "Movies poster", title: "TIL SAMA", beskrivelse: "Lorem ipsum should be around here...", year: "7+" },
+    { image: 'Poster-Trash1.jpg', alt: "Movies poster", title: "Trash", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
+    { image: 'Poster-Citizenfour1.jpg', alt: "Movies poster", title: "Citizenfour", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
+    { image: 'Poster-Riot1.jpg', alt: "Movies poster", title: "The Riot Club", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
     { image: 'poster-ida.jpg', alt: "Movies poster", title: "Ida", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
 ];
 
