@@ -447,6 +447,9 @@ body {
         grid-template-columns: 100%;
     -ms-grid-rows: 20% 35% 35%;
         grid-template-rows: 20% 35% 35%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #contactform h1 {
     margin: 0;
@@ -461,7 +464,7 @@ body {
         justify-self: center;
   }
   #colone {
-    width: 35%;
+    width: 60%;
     margin: 0;
     -ms-grid-column: 1;
         grid-column-start: 1;

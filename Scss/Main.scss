@@ -337,7 +337,8 @@ align-items: end;
     }
     #contactgrid {
         grid-template-columns: 100%;
-        grid-template-rows: 20% 35% 35%;  
+        grid-template-rows: 20% 35% 35%;
+        justify-content: center;
     }
         #contactform h1 {
             margin: 0;
@@ -347,7 +348,7 @@ align-items: end;
             justify-self: center;
         }
     #colone {
-        width: 35%;
+        width: 60%;
         margin: 0;
         grid-column-start: 1;
         grid-row-start: 3;
