@@ -140,6 +140,8 @@
     font-weight: 700;
     color: #707070;
     cursor: pointer;
+    position: relative;
+    top: 203px;
   }
   #contactsection #contactform #contactgrid #colone ::-webkit-input-placeholder {
     font-weight: 700;
@@ -159,7 +161,7 @@
   }
   #contactsection #contactform #contactgrid #coltwo {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: -3rem;
   }
   #contactsection #contactform #contactgrid #coltwo textarea {
     width: 100%;
