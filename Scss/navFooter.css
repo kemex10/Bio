@@ -2,11 +2,6 @@ body {
   background-color: #1B262C;
 }
 
-body main {
-  width: 100%;
-  height: 100vh;
-}
-
 body main #hero {
   width: 100%;
   padding: 0.1rem;
