@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Om biografen</title>
+    <link rel="stylesheet" href="/Scss/Main.css">
+    <link rel="stylesheet" href="Scss/navFooter.css">
 </head>
-
 <body>
+    <section id="header">
+        <article>
+            <header>
+                <img src="./Gfx/logo.png" alt="logo" />
+            </header>
+            <footer>
+                <span>
+                    <ion-icon name="arrow-back-outline" id="button"></ion-icon>
+                </span>
+                <div id="animation">
+                    <div id="start" class="display"></div>
+                    <div id="end" class="display"></div>
+                </div>
+                <ul id="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Om Biografen</a></li>
+                    <li class="newUl"><a href="#">Film</a>
+                        <ul>
+                            <li><a href="#">Cyber</a></li>
+                            <li><a href="#">Nether</a></li>
+                            <li><a href="#">Lands</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tilmelding</a></li>
+                    <li><a href="#">Billet bestilling</a></li>
+                    <li><a href="#">Kontakt</a></li>
 
+                </ul>
+            </footer>
+        </article>
+    </section>
+    <main id="aboutmain">
+        <section id="abouthead"><img src="/Gfx/Biografen_Grand_Stockholm.jpg" alt="facade-biograf" id="aboutfront">
+            <div class="overlay">OM BIOGRAFEN</div>
+        </section>
+            <section class="aboutpara" id="aboutone"><h2>BIOGRAFEN</h2>
+            <p id="pone">Biografen er en lille biograf med speciale i kulturaktuelle og alternative filmoplevelser.</p>
+            <p id="ptwo">Biografen blev i 2014 ombygget og fuldt digitaliseret. Det betyder, at vi i smukke historiske rammer viser film med den mest moderne teknologi, der giver et knivskarpt billede og en uovertruffen lyd.</p>
+            <p id="pthree">Vi har netop afsluttet en større renovering af salene og investeret i helt nyt udstyr. Biografen tilbyder i denne forbindelse et nyt medlemskoncept, nemlig SeniorBio!</p>
+            <div id="modal">
+                <img src="/Gfx/slide_01.jpg" alt="biografsal" class="slides"/>
+                <img src="/Gfx/slide_02.jpg" alt="biografsal" class="slides"/>
+                <img src="/Gfx/slide_03.jpg" alt="biografsal" class="slides"/>
+            </div>
+            </section>
+            <section class="aboutpara" id="abouttwo">
+                <h2>SALENE</h2>
+                <p>Vi kan teknisk set afvikle stort set alle typer arrangementer, og såfremt der er noget vi ikke har i huset, skaffer vi det manglende udstyr hos vores professionelle serviceleverandører. Kontakt os for nærmere information.</p>
+                <p>Senior-Bio viser stadig film på analog 35mm film ved enkelte visninger, så nostalgien kan stadig få sin plads i det gode gamle "Biograf Theater".</p>
+            </section>
+            <section class="aboutpara" id="aboutthree"><h2>SPECIAL FORESTILLINGER</h2>
+            <p id="senp">Senior Bio: Man.- Tor.:	14.00 - 16.00</p>
+            <p id="firp">Første Forestilling:	16.15 - 18.00</p>
+            <p id="secp">Anden Forestilling:	18.30 - 21.00</p>
+            <p id="thip">Tredje Forestilling:	21.15 - 22.00</p>
+            <p id="midp">Fred. lørd. Midnat:	22.30 - 02.00</p>
+            </section>
+
+            <section id="footer">
+                <article>
+                    <span>
+                        <ul>
+                            <li><a href="#">
+                                    <image src="Gfx/logo.png" alt="logo" /></a></li>
+                            <li><a href="#">Telefon: 55 33 23 16</a></li>
+                            <li><a href="#">E-mail: Biografen@mail.dk</a></li>
+                        </ul>
+                    </span>
+                    <span>
+                        <p>
+                            Biografen<br />
+                            Haveje 33-35<br />
+                            1840 Avedøre
+                        </p>
+                    </span>
+                    <span>
+                        <ul>
+                            <li><a href="#">www.biografen1.dk</a></li>
+                            <li><a href="#">Copyright 2020-2020</a></li>
+                            <li><a href="#">Biografen 1</a></li>
+                        </ul>
+                    </span>
+                </article>
+            </section>
+    </main>
+    
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="JS/lottie.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="/JS/slides.js"></script>
 </body>
-
 </html>
