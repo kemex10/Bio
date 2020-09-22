@@ -158,7 +158,6 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   .movie-container {
-      margin: 20px 0;
       select {
           background-color: $general-white-color;
           border: 0;
@@ -236,6 +235,7 @@ body {
       margin: 15px 0;
       transform: rotateX(-45deg);
       box-shadow: 0 3px 10px $background-color;
+      overflow: hidden;
   }
   p.text {
       margin: 5px 0;
@@ -247,6 +247,12 @@ body {
 .bio{
 margin-left: 400px;
 margin-top: -400px;
+
+.video {
+  width: 100%;
+  position: absolute;
+  top: -30%;
+}
 }
 }
 

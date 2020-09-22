@@ -152,9 +152,6 @@
     font-family: "Lato", sans-serif;
     margin: 0;
   }
-  body .movie-container {
-    margin: 20px 0;
-  }
   body .movie-container select {
     background-color: #FFFFFF;
     border: 0;
@@ -247,6 +244,7 @@
             transform: rotateX(-45deg);
     -webkit-box-shadow: 0 3px 10px #242333;
             box-shadow: 0 3px 10px #242333;
+    overflow: hidden;
   }
   body p.text {
     margin: 5px 0;
@@ -257,6 +255,11 @@
   .bio {
     margin-left: 400px;
     margin-top: -400px;
+  }
+  .bio .video {
+    width: 100%;
+    position: absolute;
+    top: -30%;
   }
 }
 
