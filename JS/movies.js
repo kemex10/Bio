@@ -4,13 +4,13 @@ const thirdRow = document.getElementById('senior');
 
 let movieArray = [
     { image: 'poster01.jpg', alt: "Movies poster", title: "Antebellum", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
-    { image: 'poster02.jpg', alt: "Movies poster", title: "Martin Eden", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
-    { image: 'poster03.jpg', alt: "Movies poster", title: "Love Life", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
-    { image: 'poster04.jpg', alt: "Movies poster", title: "David Copper", beskrivelse: "Lorem ipsum should be around here...", year: "A+" },
-    { image: 'poster05.jpg', alt: "Movies poster", title: "Til Sama", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
-    { image: 'poster06.jpg', alt: "Movies poster", title: "Wendy", beskrivelse: "Lorem ipsum should be around here...", year: "A+" },
-    { image: 'poster07.jpg', alt: "Movies poster", title: "Officer", beskrivelse: "Lorem ipsum should be around here...", year: "13+" },
-    { image: 'poster08.jpg', alt: "Movies poster", title: "Ida", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
+    { image: 'poster02.jpg', alt: "Movies poster", title: "Martin Eden", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
+    { image: 'poster03.jpg', alt: "Movies poster", title: "Officer og Spion", beskrivelse: "Lorem ipsum should be around here...", year: "15+" },
+    { image: 'poster04.jpg', alt: "Movies poster", title: "AFTER 2", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
+    { image: 'poster05.jpg', alt: "Movies poster", title: "THE KING", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
+    { image: 'poster06.jpg', alt: "Movies poster", title: "DAVID COPPERFIELD", beskrivelse: "Lorem ipsum should be around here...", year: "18+" },
+    { image: 'poster07.jpg', alt: "Movies poster", title: "TIL SAMA", beskrivelse: "Lorem ipsum should be around here...", year: "7+" },
+    { image: 'poster-ida.jpg', alt: "Movies poster", title: "Ida", beskrivelse: "Lorem ipsum should be around here...", year: "11+" },
 ];
 
 let addHtml = "";
