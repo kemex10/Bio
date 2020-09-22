@@ -339,7 +339,7 @@ body {
           align-items: center;
 }
 
-#contactsection form {
+#contactform {
   height: 65vh;
   width: 75%;
   background-color: #0F4C75;
@@ -379,7 +379,7 @@ body {
 .contactInput {
   height: 37px;
   width: 250px;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 }
 
 #contactButton {
@@ -401,7 +401,7 @@ body {
       grid-row-start: 2;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 #coltwo {
@@ -432,21 +432,28 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .contactmain form {
-    height: 100vh;
+  #contactsection {
+    height: 150vh;
+  }
+  #contactform {
+    height: 110vh;
     width: 90%;
+  }
+  .contactmain #footer {
+    height: 500px;
   }
   #contactgrid {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 25% 35% 35%;
-        grid-template-rows: 25% 35% 35%;
+    -ms-grid-rows: 20% 35% 35%;
+        grid-template-rows: 20% 35% 35%;
   }
-  .contactmain form h1 {
+  #contactform h1 {
     margin: 0;
     -ms-grid-column: 1;
         grid-column-start: 1;
-    grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
