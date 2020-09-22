@@ -7,6 +7,7 @@ btn.addEventListener("click", function () {
     if (!name.value) {
         name.style.border = "2px solid red"
         name.focus();
+        keypressed(name)
         hasErrors = true;
         return false;
         //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
@@ -16,6 +17,7 @@ btn.addEventListener("click", function () {
     if (!email.value) {
         email.style.border = "2px solid red"
         email.focus();
+        keypressed(email)
         hasErrors = true;
         return false;
         //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
@@ -24,6 +26,7 @@ btn.addEventListener("click", function () {
     if (!message.value) {
         message.style.border = "2px solid red"
         message.focus();
+        keypressed(message)
         hasErrors = true;
         return false;
         //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
@@ -34,3 +37,9 @@ btn.addEventListener("click", function () {
     }
 
 });
+
+function keypressed(input) {
+    input.addEventListener('keypress', () => {
+        input.style.border = "none"
+    })
+}
