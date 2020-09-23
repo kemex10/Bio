@@ -5,87 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt os</title>
-    <link rel="stylesheet" href="/Scss/Main.css">
+    <link rel="stylesheet" href="/Scss/kontakt.css">
     <link rel="stylesheet" href="Scss/navFooter.css">
+    <link rel="stylesheet" href="/Scss/Main.css">
 </head>
 
 <body>
-    <section id="header">
-        <article>
-            <header>
-                <img src="./Gfx/logo.png" alt="logo" />
-            </header>
-            <footer>
-                <span>
-                    <ion-icon name="arrow-back-outline" id="button"></ion-icon>
-                </span>
-                <div id="animation">
-                    <div id="start" class="display"></div>
-                    <div id="end" class="display"></div>
+    <main class="contactmain">
+        <section id="header">
+            <article>
+                <header>
+                    <img src="./Gfx/logo.png" alt="logo" />
+                </header>
+                <footer>
+                    <span>
+                        <ion-icon name="menu-outline" id="button"></ion-icon>
+                    </span>
+                    <div id="animation">
+                        <div id="start" class="display"></div>
+                        <div id="end" class="display"></div>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="ombio.html">Om Biografen</a></li>
+                        <li class="newUl"><a href="aktuelt.html">Film</a>
+                            <ul>
+                                <li><a href="https://www.kino.dk/aktuelle-film">Aktuelle</a></li>
+                                <li><a href="https://www.nfbio.dk/dokumenter/boernebio">Børn</a></li>
+                                <li><a href="https://www.atlasbio.dk/cms_page_347">Senior</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tilmelding.html">Tilmelding</a></li>
+                        <li><a href="bestil.html">Billet bestilling</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+
+                    </ul>
+                </footer>
+            </article>
+        </section>
+        <section id="contactsection">
+            <form id="contactform" action="">
+                <h1>KONTAKT</h1>
+                <div id="contactgrid">
+                    <div id="colone">
+                        <input type="text" placeholder="NAVN" class="contact contactInput" id="contactname">
+                        <input type="text" placeholder="EMAIL" class="contact contactInput" id="contactmail">
+                        <button type="button" id="contactButton">SEND</button></div>
+                    <div id="coltwo">
+                        <textarea class="contact" id="contactDescribe" cols="36" rows="10"
+                            placeholder="BESKRIVELSE"></textarea></div>
                 </div>
-                <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Om Biografen</a></li>
-                    <li class="newUl"><a href="#">Film</a>
-                        <ul>
-                            <li><a href="#">Cyber</a></li>
-                            <li><a href="#">Nether</a></li>
-                            <li><a href="#">Lands</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Tilmelding</a></li>
-                    <li><a href="#">Billet bestilling</a></li>
-                    <li><a href="#">Kontakt</a></li>
+            </form>
+        </section>
 
-                </ul>
-            </footer>
-        </article>
-    </section>
-<main class="contactmain">
-    <section id="contactsection">
-    <form id="contactform" action="">
-        
-        <div id="contactgrid">
-            <h1>KONTAKT</h1><div id="colone">
-        <input type="text" placeholder="NAVN" class="contact contactInput" id="contactname">
-        <input type="text" placeholder="EMAIL" class="contact contactInput" id="contactmail">
-        <button type="button" id="contactButton">SEND</button></div><div id="coltwo">
-        <textarea class="contact" id="contactDescribe" cols="36" rows="10" placeholder="BESKRIVELSE"></textarea></div>
-        </div>
-    </form>
-</section>
-    <section id="footer">
-        <article>
-            <span>
-                <ul>
-                    <li><a href="#">
-                            <image src="Gfx/logo.png" alt="logo" /></a></li>
-                    <li><a href="#">Telefon: 55 33 23 16</a></li>
-                    <li><a href="#">E-mail: Biografen@mail.dk</a></li>
-                </ul>
-            </span>
-            <span>
-                <p>
-                    Biografen<br />
-                    Haveje 33-35<br />
-                    1840 Avedøre
-                </p>
-            </span>
-            <span>
-                <ul>
-                    <li><a href="#">www.biografen1.dk</a></li>
-                    <li><a href="#">Copyright 2020-2020</a></li>
-                    <li><a href="#">Biografen 1</a></li>
-                </ul>
-            </span>
-        </article>
-    </section>
-</main>
+        <section id="footer">
+            <article>
+                <span>
+                    <ul>
+                        <li><a href="#">
+                                <image src="Gfx/logo.png" alt="logo" /></a></li>
+                        <li><a href="#">Telefon: 55 33 23 16</a></li>
+                        <li><a href="#">E-mail: Biografen@mail.dk</a></li>
+                    </ul>
+                </span>
+                <span>
+                    <p>
+                        Biografen<br />
+                        Haveje 33-35<br />
+                        1840 Avedøre
+                    </p>
+                </span>
+                <span>
+                    <ul>
+                        <li><a href="#">www.biografen1.dk</a></li>
+                        <li><a href="#">Copyright 2020-2020</a></li>
+                        <li><a href="#">Biografen 1</a></li>
+                    </ul>
+                </span>
+            </article>
+        </section>
+    </main>
 
-<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-<script src="JS/lottie.js"></script>
-<script src="JS/header.js"></script>
-<script src="/JS/kontakt.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="JS/lottie.js"></script>
+    <script src="JS/header.js"></script>
+    <script src="/JS/kontakt.js"></script>
 
 </body>
 

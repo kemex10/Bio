@@ -11,242 +11,244 @@
 
 <body>
     <main>
-      <section id="header">
-        <article>
-            <header>
-                <img src="./Gfx/logo.png" alt="logo" />
-            </header>
-            <footer>
-                <span>
-                    <ion-icon name="arrow-back-outline" id="button"></ion-icon>
-                </span>
-                <div id="animation">
-                    <div id="start" class="display"></div>
-                    <div id="end" class="display"></div>
-                </div>
-                <ul id="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Om Biografen</a></li>
-                    <li class="newUl"><a href="#">Film</a>
-                        <ul>
-                            <li><a href="#">Cyber</a></li>
-                            <li><a href="#">Nether</a></li>
-                            <li><a href="#">Lands</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Tilmelding</a></li>
-                    <li><a href="#">Billet bestilling</a></li>
-                    <li><a href="#">Kontakt</a></li>
+        <section id="header">
+            <article>
+                <header>
+                    <img src="./Gfx/logo.png" alt="logo" />
+                </header>
+                <footer>
+                    <span>
+                        <ion-icon name="menu-outline" id="button"></ion-icon>
+                    </span>
+                    <div id="animation">
+                        <div id="start" class="display"></div>
+                        <div id="end" class="display"></div>
+                    </div>
+                    <ul id="menu">
+                        <li><a href="Index.html">Home</a></li>
+                        <li><a href="ombio.html">Om Biografen</a></li>
+                        <li class="newUl"><a href="aktuelt.html">Film</a>
+                            <ul>
+                                <li><a href="https://www.kino.dk/aktuelle-film">Aktuelle</a></li>
+                                <li><a href="https://www.nfbio.dk/dokumenter/boernebio">Børn</a></li>
+                                <li><a href="https://www.atlasbio.dk/cms_page_347">Senior</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="tilmelding.html">Tilmelding</a></li>
+                        <li><a href="bestil.html">Billet bestilling</a></li>
+                        <li><a href="kontakt.html">Kontakt</a></li>
 
-                </ul>
-            </footer>
-        </article>
-    </section>
+                    </ul>
+                </footer>
+            </article>
+        </section>
 
 
-    <section id="bestil">
-        <article class="Bestil">
-            <h1>Bestil Billetter</h1>
-            <div class="movie-container">
-                <select name="" id="movie">
-                    <option selected>Vælg en film</option>
-                    <option value="100">Citizenfour (2014)</option>
-                    <option value="110">Ida (2013)</option>
-                    <option value="90">trash (2014)</option>
-                    <option value="95">The riot club (2014)</option>
-                </select>
-              </div>
-          </article>
-        </li>
-        <h3>Vælg tid:</h3>
-        <input type="datetime-local" style="margin-top: 10px; width: 300px;" id="meeting-time"
-               name="meeting-time" value="2020-09-16T11:00"
-               min="2020-09-16T00:00" max="2022-12-31T00:30"/>
-<br>
+        <section id="bestil">
+            <div class="bestil-container">
+                <article class="Bestil">
+                    <h1>Bestil Billetter</h1>
+                    <div class="movie-container">
+                        <select name="" id="movie">
+                            <option selected>Vælg en film</option>
+                            <option value="100">Citizenfour (2014)</option>
+                            <option value="110">Ida (2013)</option>
+                            <option value="90">trash (2014)</option>
+                            <option value="95">The riot club (2014)</option>
+                        </select>
+                    </div>
+                </article>
+                </li>
+                <h3>Vælg tid:</h3>
+                <input type="datetime-local" style="margin-top: 10px; width: 300px;" id="meeting-time"
+                    name="meeting-time" value="2020-09-16T11:00" min="2020-09-16T00:00" max="2022-12-31T00:30" />
+                <br>
                 <h3>Antal Billetter:</h3>
-               <input type="text" name="antal billetter" id="antal" style="margin-top: 10px; width: 300px;"/>
-               
-               <h3>Specielle Forhold</h3>
-               <input type="text" name="" id="" style="margin-top: 5px; width: 300px; margin-right: 500px;"/> 
-               
-               <form>
+                <input type="text" name="antal billetter" id="antal" style="margin-top: 10px; width: 300px;" />
 
-                <div class="checkboxes">
-              
-                  <label for="x"><input type="checkbox" id="x" /> <span>2D</span></label>
-              
-                  <label for="y"><input type="checkbox" id="y" /> <span>3D</span></label>
-              
-                </div>
-              
-              </form>
+                <h3>Specielle Forhold</h3>
+                <input type="text" name="" id="" style="margin-top: 5px; width: 300px; margin-right: 500px;" />
 
-              
-               <button class="button" type="submit"><span>Bestil</span></button>
-               <section class="bio">
+                <form>
 
-                <ul class="showcase">
-                 <li>
-                     <div class="seat"></div>
-                     <small>Frie</small>
-                 </li>
-                 <li>
-                     <div class="seat selected"></div>
-                     <small>Valgte</small>
-                 </li>
-             
-                 <li>
-                     <div class="seat occupied"></div>
-                     <small>Optaget</small>
-                 </li>
+                    <div class="checkboxes">
 
-                 <li>
-                     <div class="seat handicapped"></div>
-                     <small>Handicap</small>
-                 </li>
-             </ul>
-             
-             <div class="container">
-                 <div class="screen">
-                     <video width="459" height="150" controls autoplay  >
+                        <label for="x"><input type="checkbox" id="x" /> <span>2D</span></label>
 
-                         <source id="movie1" src="Gfx/Media/The Conjuring 3 - Official Trailer (2021).mp4" type="video/mp4">
-                 </div>
-             
-                 <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat occupied"></div>
-                     <div class="seat occupied"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat handicapped"></div>
-                     <div class="seat handicapped"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat  occupied"></div>
-                     <div class="seat  occupied"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   <div class="row">
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                     <div class="seat occupied"></div>
-                     <div class="seat occupied"></div>
-                     <div class="seat"></div>
-                     <div class="seat"></div>
-                   </div>
-                   </div>
-             
-                   <p class="text">
-                       Du har valgt <span id="count">0</span> pladser til en pris af DKK <span id="total">0</span>
-                   </p>
-</section>
-</section>
-         
+                        <label for="y"><input type="checkbox" id="y" /> <span>3D</span></label>
+
+                    </div>
+
+                </form>
+
+
+                <button class="button" type="submit"><span>Bestil</span></button>
+                <section class="bio">
+
+                    <ul class="showcase">
+                        <li>
+                            <div class="seat"></div>
+                            <small>Frie</small>
+                        </li>
+                        <li>
+                            <div class="seat selected"></div>
+                            <small>Valgte</small>
+                        </li>
+
+                        <li>
+                            <div class="seat occupied"></div>
+                            <small>Optaget</small>
+                        </li>
+
+                        <li>
+                            <div class="seat handicapped"></div>
+                            <small>Handicap</small>
+                        </li>
+                    </ul>
+
+                    <div class="container">
+                        <div class="screen">
+                            <video class="video" controls autoplay>
+
+                                <source id="movie1" src="Gfx/Media/The Conjuring 3 - Official Trailer (2021).mp4"
+                                    type="video/mp4">
+                        </div>
+
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat occupied"></div>
+                            <div class="seat occupied"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat handicapped"></div>
+                            <div class="seat handicapped"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat  occupied"></div>
+                            <div class="seat  occupied"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                        <div class="row">
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                            <div class="seat occupied"></div>
+                            <div class="seat occupied"></div>
+                            <div class="seat"></div>
+                            <div class="seat"></div>
+                        </div>
+                    </div>
+
+                    <p class="text">
+                        Du har valgt <span id="count">0</span> pladser til en pris af DKK <span id="total">0</span>
+                    </p>
+                </section>
+            </div>
+        </section>
+
 
         <section id="footer">
             <article>
@@ -274,11 +276,11 @@
             </article>
         </section>
     </main>
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-        <script src="js/lottie.js"></script>
-        <script src="js/header.js"></script>
-        <script src="JS/App.js"></script>
-        
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="js/lottie.js"></script>
+    <script src="js/header.js"></script>
+    <script src="JS/App.js"></script>
+
 </body>
 
 </html>

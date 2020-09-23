@@ -1,8 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -45,7 +43,7 @@ body {
 
 .overlay {
   color: #BBE1FA;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: normal;
   position: absolute;
   top: 50%;
@@ -138,6 +136,7 @@ body {
   -ms-grid-column-align: start;
       justify-self: start;
   margin-left: 4%;
+  top: 20px;
 }
 
 #aboutfront {
@@ -272,10 +271,7 @@ body {
     margin-right: 6%;
   }
   #pthree {
-    -ms-grid-row: 4;
-        grid-row-start: 4;
     margin-left: 6%;
-    margin-right: 6%;
   }
   #aboutone h2 {
     -ms-grid-row: 1;
@@ -297,28 +293,29 @@ body {
   #aboutthree h2 {
     -ms-grid-row: 1;
         grid-row-start: 1;
-    line-height: 100%;
-    margin-bottom: 20px;
+    line-height: 80%;
+    margin-bottom: -20px;
+    word-spacing: 30px;
   }
   #senp {
-    -ms-grid-row: 2;
-        grid-row-start: 2;
-  }
-  #firp {
     -ms-grid-row: 3;
         grid-row-start: 3;
   }
-  #secp {
+  #firp {
     -ms-grid-row: 4;
         grid-row-start: 4;
   }
-  #thip {
+  #secp {
     -ms-grid-row: 5;
         grid-row-start: 5;
   }
-  #midp {
+  #thip {
     -ms-grid-row: 6;
         grid-row-start: 6;
   }
+  #midp {
+    -ms-grid-row: 7;
+        grid-row-start: 7;
+  }
 }
-/*# sourceMappingURL=Main.css.map */
+/*# sourceMappingURL=Ombio.css.map */

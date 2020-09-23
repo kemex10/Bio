@@ -23,13 +23,13 @@ button.addEventListener('click', () => {
     if (!started.classList.contains('active')) {
         started.classList.toggle('active')
         start.playSegments([0, 60], true)
-        button.name = "arrow-forward-outline"
+        button.name = "filter-outline"
         menu.style.display = "block"
     } else {
         started.classList.toggle('active')
         ended.classList.toggle('active')
         end.playSegments([0, 60], true)
-        button.name = "arrow-back-outline"
+        button.name = "menu-outline"
         menu.style.display = "none"
         ended.classList.remove('active')
     }

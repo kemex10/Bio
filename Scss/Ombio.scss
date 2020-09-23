@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
     grid-template-columns: 100%;
     background-color: #1B262C;
 }
-//Footeren på siden er også en del af grid
 #aboutmain #footer {
     grid-column-start: 1;
     grid-row-start: 5;
@@ -29,14 +27,13 @@ body {
     align-self: center;
     width: 100%;
 }
-//.slides refererer til slideshow på siden
+
 .slides {
     display: none;
 }
-//.overlay er tekst overlay til billedet øverst på siden, position absolute lader det ligge ind over billedet
 .overlay {
     color: #BBE1FA;
-    font-size: 100px;
+    font-size: 80px;
     font-weight: normal;
     position: absolute;
     top: 50%;
@@ -51,7 +48,7 @@ body {
     }
 //Gridsystemet i første sektion har to kolonner og syv rækker
 //Den første og sidste række er tom, og de er der primært for at skabe plads
-//Gridsystemet bruges til at indele teksten i afsnit, og placere slideshow
+//Gridsystemet bruges til at indele teksten i afsnit, og placere billedet
 #aboutone {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -100,9 +97,9 @@ body {
     grid-row-start: 5;
     justify-self: start;
     margin-left: 4%;
+    top: 20px;
 
 }
-//#aboutfront er billedet i overskriften, med tekst overlay
 #aboutfront {
     width: 100%;
     height: 550px;
@@ -168,7 +165,6 @@ body {
     max-width: 65%;
 }
 //Media query om bio
-//I media query bliver gridsystemet ændret, så størrelsen på de forskellige rows kan rettes til
 @media only screen and (max-width: 768px) {
     #aboutmain {
         display: grid;
@@ -201,12 +197,10 @@ body {
         margin-left: 6%;
         margin-right: 6%;
 
-
     }
     #pthree {
-        grid-row-start: 4;
         margin-left: 6%;
-        margin-right: 6%;
+
 
 
     }
@@ -227,22 +221,24 @@ body {
     }
     #aboutthree h2 {
         grid-row-start: 1;
-        line-height: 100%;
-        margin-bottom: 20px;
+        line-height: 80%;
+        margin-bottom: -20px;
+        word-spacing: 30px;
     }
     #senp {
-        grid-row-start: 2;
-    }
-    #firp {
         grid-row-start: 3;
     }
-    #secp {
+    #firp {
         grid-row-start: 4;
     }
-    #thip {
+    #secp {
         grid-row-start: 5;
     }
-    #midp {
+    #thip {
         grid-row-start: 6;
     }
+    #midp {
+        grid-row-start: 7;
+    }
+    
 }

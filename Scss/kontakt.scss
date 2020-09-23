@@ -1,0 +1,132 @@
+@media (min-width: 768px) {
+    #contactsection {
+        width: 80%;
+        height: 68vh;
+        margin: 3rem auto;
+        background-color: #0F4C75;
+        #contactform {
+            width: 40%;
+            margin: 0 auto;
+            padding: 5rem 0;
+            h1 {
+                color: #BBE1FA;
+                font-size: 3rem;
+                font-weight: 400;
+                margin-bottom: 4rem;
+            }
+            #contactgrid {
+                display: flex;
+                justify-content: space-between;
+                #colone {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    input {
+                        padding: 1rem 2rem;
+                        background-color: #DDDDDD;
+                        border: none;
+                        outline: none;
+                        margin-bottom: 2rem;
+                    }
+                    button {
+                        background-color: #BBE1FA;
+                        padding: 1rem 2rem;
+                        border: none;
+                        outline: none;
+                        font-weight: 700;
+                        color: #707070;
+                        cursor: pointer;
+                    }
+                    ::placeholder { 
+                        font-weight: 700;
+                        color: #707070;
+                    }
+                }
+                #coltwo {
+                    margin-left: 1rem;
+                    textarea {
+                        height: 100%;
+                        background-color: #DDDDDD;
+                        resize: none;
+                        border: none;
+                        outline: none;
+                        padding: 1rem;
+                        font-weight: 700;
+                        color: #707070;
+                        font-size: 1rem;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #contactsection {
+        width: 80%;
+        margin: 3rem auto;
+        background-color: #0F4C75;
+        #contactform {
+            width: 80%;
+            margin: 0 auto;
+            padding: 5rem 0;
+            h1 {
+                color: #BBE1FA;
+                font-size: 3rem;
+                font-weight: 400;
+                margin-bottom: 4rem;
+            }
+            #contactgrid {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                #colone {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    input {
+                        padding: 1rem 2rem;
+                        background-color: #DDDDDD;
+                        border: none;
+                        outline: none;
+                        margin-bottom: 2rem;
+                    }
+                    button {
+                        background-color: #BBE1FA;
+                        padding: 1rem 2rem;
+                        border: none;
+                        outline: none;
+                        font-weight: 700;
+                        color: #707070;
+                        cursor: pointer;
+                        position: relative;
+                        top: 203px;
+                    }
+                    ::placeholder { 
+                        font-weight: 700;
+                        color: #707070;
+                    }
+                }
+                #coltwo {
+                    width: 100%;
+                    margin-top: -3rem;
+                    textarea {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #DDDDDD;
+                        resize: none;
+                        border: none;
+                        outline: none;
+                        padding: 1rem;
+                        font-weight: 700;
+                        color: #707070;
+                        font-size: 1rem;
+                    }
+                }
+    
+            }
+        }
+    }
+}
+
