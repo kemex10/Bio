@@ -16,6 +16,7 @@ body {
     grid-template-columns: 100%;
     background-color: #1B262C;
 }
+//Footeren på siden er også en del af grid
 #aboutmain #footer {
     grid-column-start: 1;
     grid-row-start: 5;
@@ -27,10 +28,11 @@ body {
     align-self: center;
     width: 100%;
 }
-
+//.slides refererer til slideshow på siden
 .slides {
     display: none;
 }
+//.overlay er tekst overlay til billedet øverst på siden, position absolute lader det ligge ind over billedet
 .overlay {
     color: #BBE1FA;
     font-size: 100px;
@@ -48,7 +50,7 @@ body {
     }
 //Gridsystemet i første sektion har to kolonner og syv rækker
 //Den første og sidste række er tom, og de er der primært for at skabe plads
-//Gridsystemet bruges til at indele teksten i afsnit, og placere billedet
+//Gridsystemet bruges til at indele teksten i afsnit, og placere slideshow
 #aboutone {
     grid-row-start: 2;
     grid-column-start: 1;
@@ -99,6 +101,7 @@ body {
     margin-left: 4%;
 
 }
+//#aboutfront er billedet i overskriften, med tekst overlay
 #aboutfront {
     width: 100%;
     height: 550px;
@@ -164,6 +167,7 @@ body {
     max-width: 65%;
 }
 //Media query om bio
+//I media query bliver gridsystemet ændret, så størrelsen på de forskellige rows kan rettes til
 @media only screen and (max-width: 768px) {
     #aboutmain {
         display: grid;
@@ -249,6 +253,7 @@ body {
     height: 100vh;
 
 }
+//#contactsection bruges til at positionere selve formularen
 #contactsection {
     height: 100vh;
     display: flex;
