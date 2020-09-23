@@ -105,7 +105,6 @@ main {
                 top: 10%;
                 right: 10%;
                 display: none;
-                transform: rotateX(20deg) rotateY(20deg);
                 z-index: 3;
                 & > li:hover{
                     border-bottom: 2px solid white;
@@ -194,7 +193,6 @@ ion-icon {
                     top: 10%;
                     right: 10%;
                     display: none;
-                    transform: rotateX(25deg) rotateY(20deg);
                     z-index: 2;
                     & > li:hover{
                         border-bottom: 2px solid white;
