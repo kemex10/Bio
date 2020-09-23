@@ -159,8 +159,6 @@ body #header article footer #menu {
   top: 10%;
   right: 10%;
   display: none;
-  -webkit-transform: rotateX(20deg) rotateY(20deg);
-          transform: rotateX(20deg) rotateY(20deg);
   z-index: 3;
 }
 
@@ -265,8 +263,6 @@ body ion-icon {
     top: 10%;
     right: 10%;
     display: none;
-    -webkit-transform: rotateX(25deg) rotateY(20deg);
-            transform: rotateX(25deg) rotateY(20deg);
     z-index: 2;
   }
   body #header article footer #menu > li:hover {
